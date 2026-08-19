@@ -1,189 +1,821 @@
-Chapter 1 : Language Fundamentals
-			Agenda
-				1. Introduction  
-				2. Identifiers 
-					o Rules to define java identifiers:  
-				3. Reserved words 
-					o Reserved words for data types: (8)  
-					o Reserved words for flow control:(11)  
-					o Keywords for modifiers:(11)  
-					o Keywords for exception handling:(6)  
-					o Class related keywords:(6)  
-					o Object related keywords:(4)  
-					o Void return type keyword  
-					o Unused keywords  
-					o Reserved literals  
-					o Enum  
-					o Conclusions  
-				4. Data types  
-					o Integral data types  
-						 Byte  
-						 Short  
-						 Int  
-						 long  
-					o Floating Point Data types  
-					o boolean data type  
-					o Char data type  
-					o Java is pure object oriented programming or not ?  
-					o Summary of java primitive data type  
-				5. Literals  
-					o Integral Literals  
-					o Floating Point Literals  
-					o Boolean literals  
-					o Char literals  
-					o String literals  
-					o 1.7 Version enhansements with respect to Literals  
-						 Binary Literals  
-						 Usage of _ (underscore)symbol in numeric literals  
-				6. Arrays  
-					1. Introduction  
-					2. Array declaration  
-						 Single dimensional array declaration  
-						 Two dimensional array declaration  
-						 Three dimensional array declaration  
-					3. Array construction  
-						 Multi dimensional array creation  
-					4. Array initialization  
-					5. Array declaration, construction, initialization in a single line. 
-					6. length Vs length() method  
-					7. Anonymous arrays  
-					8. Array element assignments  
-					9. Array variable assignments  
-						 Types of variables 
-							o Primitive variables  
-							o Reference variables  
-							o Instance variables  
-							o Static variables  
-							o Local variables  
-							o Conclusions  
-						 Un initialized arrays  
-							o Instance level  
-							o Static level  
-							o Local level  
-						 Var arg method  
-							o Single Dimensional Array Vs Var-Arg Method  
-						 Main method  
-							o 1.7 Version Enhansements with respect to main()  
-						 Command line arguments  
-						 Java coding standards  
-							o Coding standards for classes  
-							o Coding standards for interfaces  
-							o Coding standards for methods  
-							o Coding standards for variables  
-							o Coding standards for constants  
-							o Java bean coding standards  
-								 Syntax for setter method  
-								 Syntax for getter method  
-							o Coding standards for listeners  
-								 To register a listener  
-								 To unregister a listener 
-						 Various Memory areas present inside JVM  
+# Core Java — Interview Preparation Roadmap
 
+A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repository is organized from fundamentals to advanced JVM topics so that topics can be studied and revised systematically.
 
-Chapter 2 : OPERATORS ASSIGNMENTS p- 59
-			Agenda:  
-				1. increment & decrement operators 
-				2. arithmetic operators 
-				3. string concatenation operators 
-				4. Relational operators 
-				5. Equality operators 
-				6. instanceof operators  
-				7. Bitwise operators 
-				8. Short circuit operators  
-				9. type cast operators 
-				10. assignment operator  
-				11. conditional operator 
-				12. new operator 
-				13. [ ] operator  
-				14. Precedence of java operators  
-				15. Evaluation order of java operands  
-				16. new Vs newInstance( )  
-				17. instanceof Vs isInstance( ) 
-				18. ClassNotFoundException Vs NoClassDefFoundError 
+## Chapter 1 — Java Language Fundamentals
 
-Chapter 3: Flow Control p- 85
-			 
-			Agenda :  
-				1. Introduction  
-				2. Selection statements  
-					i. if-else  
-					ii. Switch  
-					 Case Summary  
-					 fall-through inside a switch  
-					 default case  
-				3. Iterative Statements  
-					i. While loop  
-					 Unreachable statement in while  
-					ii. Do-while  
-					 Unreachable statement in do while  
-					iii. For Loop  
-					 Initilizationsection  
-					 Conditional check  
-					 Increment and decrement section  
-					 Unreachable statement in for loop  
-					iv. For each  
-					 Iterator Vs Iterable(1.5v)  
-					 Difference between Iterable and Iterator  
-				4. Transfer statements  
-					o Break statement  
-					o Continue statement  
-					o Labeled break and continue statements  
-					o Do-while vs continue (The most dangerous combination) 					
+### 1. Introduction
+- What is Java?
+- Java features
+- JDK vs JRE vs JVM
+- Java compilation and execution flow
 
-Chapter 4: Declaration a Access Modifiers p- 114
+### 2. Identifiers
+- What is an identifier?
+- Rules for defining identifiers
+- Valid vs invalid identifiers
+- Naming conventions
 
-Chapter 5: oops p - 183 -- inharitance,Polymorphism, encapsulation abstraction aggrigation coherance
+### 3. Reserved Words / Keywords
+- Data type keywords
+- Flow-control keywords
+- Modifier keywords
+- Exception-handling keywords
+- Class/interface-related keywords
+- Object-related keywords
+- `void`
+- Unused/reserved keywords
+- Reserved literals
+- `enum`
 
-Chapter 6: Exception Handling p- 245
+### 4. Data Types
+- Primitive vs reference types
+- Integral types
+  - `byte`
+  - `short`
+  - `int`
+  - `long`
+- Floating-point types
+  - `float`
+  - `double`
+- `boolean`
+- `char`
+- Primitive data type ranges and defaults
+- Is Java purely object-oriented?
 
-Chapter 7: Multi Threading - 280
+### 5. Literals
+- Integral literals
+- Floating-point literals
+- Boolean literals
+- Character literals
+- String literals
+- Binary literals
+- Underscores in numeric literals
 
-Chapter 8: Multi Threading Enhancements p 322-
+### 6. Arrays
+- Array introduction
+- Array declaration
+- Single-dimensional arrays
+- Two-dimensional arrays
+- Multi-dimensional arrays
+- Array construction
+- Array initialization
+- Declaration + construction + initialization
+- `length` vs `length()`
+- Anonymous arrays
+- Array element assignment
+- Array reference assignment
 
-Chapter 9 : InnerClasses - 345
-Chapter 10 : Java.lang Package p 367
-Chapter 11: File IO p 428
+### 7. Variables
+- Primitive variables
+- Reference variables
+- Instance variables
+- Static variables
+- Local variables
+- Default values
+- Uninitialized arrays
 
-Chapter 12: Serialization p- 445
-			1. Serialization  
-			2. Deserialization 
-			3. transient keyword 
-			4. static Vs transient 
-			5. transient Vs final  
-			6. Object graph in serialization. 
-			7. customized serialization. 
-			8. Serialization with respect inheritance. 
-			9. Externalization 
-			10. Difference between Serialization & Externalization  
-			11. SerialVersionUID  
+### 8. Varargs
+- Varargs syntax
+- Varargs method invocation
+- Single-dimensional array vs varargs
 
-Chapter 13: Regular Expression p 463
+### 9. Main Method
+- `public static void main(String[] args)`
+- Main method variations
+- Java 7+ main-method enhancements
 
-Chapter 14: Collections p-477
+### 10. Command-Line Arguments
+- Passing arguments
+- Accessing arguments
+- Practical examples
 
-Chapter 15: Generics p- 543
-			1. Introduction 
-			2. Type-Safety 
-			3. Type-Casting 
-			4. Generic Classes 
-			5. Bounded Types 
-			6. Generic methods and wild card character(?) 
-			7. Communication with non generic code 
-			8. Conclusions 
-			* https://docs.oracle.com/javase/tutorial/java/generics/QandE/generics-questions.html
+### 11. Java Coding Standards
+- Class naming
+- Interface naming
+- Method naming
+- Variable naming
+- Constant naming
+- JavaBean standards
+- Getter/setter conventions
+- Listener registration/unregistration
 
-Chapter 16: Garbage Collection p- 559
+### 12. JVM Memory Areas — Introduction
+- Stack
+- Heap
+- Method Area / Metaspace
+- PC Register
+- Native Method Stack
 
-Chapter 17: ENUM p- 572
+---
 
-Chapter 18: Internationalization (18n) p- 586
+## Chapter 2 — Operators & Assignments
 
-Chapter 19: Development p- 596
+### Operators
+- Increment and decrement
+- Arithmetic operators
+- String concatenation
+- Relational operators
+- Equality operators
+- `instanceof`
+- Bitwise operators
+- Short-circuit operators
+- Type-cast operator
+- Assignment operators
+- Conditional / ternary operator
+- `new` operator
+- `[]` operator
 
-Chapter 20: Assertions p- 610
+### Important Concepts
+- Operator precedence
+- Operand evaluation order
+- `new` vs `newInstance()`
+- `instanceof` vs `isInstance()`
+- `ClassNotFoundException` vs `NoClassDefFoundError`
 
-Chapter 21: JVM Architecture p- 621
+---
 
-Chapter 22: Java 8 New Features p- 642
+## Chapter 3 — Flow Control
 
-chapter 23: String
+### Selection Statements
+- `if`
+- `if-else`
+- Nested `if`
+- `switch`
+- Case rules
+- Fall-through
+- `default`
+
+### Iterative Statements
+- `while`
+- `do-while`
+- `for`
+- `for-each`
+- Initialization section
+- Conditional check
+- Increment/decrement section
+- Unreachable statements
+
+### Iterators
+- `Iterable`
+- `Iterator`
+- `Iterable` vs `Iterator`
+
+### Transfer Statements
+- `break`
+- `continue`
+- Labeled `break`
+- Labeled `continue`
+- `do-while` + `continue` edge cases
+
+---
+
+## Chapter 4 — Declarations & Access Modifiers
+
+### Modifiers
+- `public`
+- `protected`
+- default/package-private
+- `private`
+
+### Declarations
+- Class declaration
+- Interface declaration
+- Method declaration
+- Variable declaration
+- Constructor declaration
+- Local vs instance vs static scope
+
+### Interview Focus
+- Access modifier visibility
+- Package access
+- Inheritance + `protected`
+- Top-level class restrictions
+
+---
+
+## Chapter 5 — OOPs
+
+### 1. Class & Object
+- Class
+- Object
+- State and behavior
+- Object creation
+
+### 2. Encapsulation
+- Data hiding
+- Getters/setters
+- Immutability connection
+
+### 3. Inheritance
+- Single inheritance
+- Multilevel inheritance
+- Hierarchical inheritance
+- Why Java does not support multiple class inheritance
+- `super`
+- Constructor chaining
+
+### 4. Polymorphism
+- Compile-time polymorphism
+- Method overloading
+- Runtime polymorphism
+- Method overriding
+- Dynamic method dispatch
+
+### 5. Abstraction
+- Abstract class
+- Abstract method
+- Interface
+- Abstraction use cases
+
+### 6. Relationships
+- Association
+- Aggregation
+- Composition
+- Dependency
+
+### 7. Coupling & Cohesion
+- Tight coupling
+- Loose coupling
+- High cohesion
+
+### 8. Must-Know Comparisons
+- Abstract class vs interface
+- Overloading vs overriding
+- Aggregation vs composition
+- Inheritance vs composition
+- Encapsulation vs abstraction
+
+---
+
+## Chapter 6 — Exception Handling
+
+### Fundamentals
+- What is an exception?
+- Exception hierarchy
+- `Throwable`
+- `Error`
+- `Exception`
+- `RuntimeException`
+
+### Types
+- Checked exceptions
+- Unchecked exceptions
+- Custom exceptions
+
+### Keywords
+- `try`
+- `catch`
+- `finally`
+- `throw`
+- `throws`
+
+### Important Topics
+- Multiple catch
+- Nested try/catch
+- Catch ordering
+- Exception propagation
+- Rethrowing exceptions
+- `finally` behavior
+- Try-with-resources
+- Suppressed exceptions
+- Custom checked vs unchecked exceptions
+
+### Interview Comparisons
+- `throw` vs `throws`
+- Checked vs unchecked exception
+- `final` vs `finally` vs `finalize`
+- Error vs Exception
+
+---
+
+## Chapter 7 — Multithreading Fundamentals
+
+### Thread Basics
+- Process vs thread
+- Creating threads
+- `Thread` class
+- `Runnable`
+- Thread lifecycle
+- `Thread.State`
+
+### Synchronization
+- Race condition
+- Critical section
+- `synchronized` method
+- `synchronized` block
+- Intrinsic monitor / lock
+
+### Thread Communication
+- `wait()`
+- `notify()`
+- `notifyAll()`
+- `sleep()`
+- `join()`
+- `yield()`
+
+### Important Concepts
+- Thread safety
+- Visibility
+- Atomicity
+- Ordering
+- Deadlock
+- Starvation
+- Livelock
+
+---
+
+## Chapter 8 — Multithreading Enhancements / Concurrency Utilities
+
+### Executor Framework
+- `Executor`
+- `ExecutorService`
+- `ScheduledExecutorService`
+- Thread pools
+- `Callable`
+- `Future`
+
+### Concurrent Collections
+- `ConcurrentHashMap`
+- `CopyOnWriteArrayList`
+- Blocking queues
+
+### Synchronizers
+- `CountDownLatch`
+- `CyclicBarrier`
+- `Semaphore`
+- `Phaser`
+- `Exchanger`
+
+### Atomic & Lock APIs
+- `AtomicInteger`
+- Atomic references
+- `Lock`
+- `ReentrantLock`
+- `ReadWriteLock`
+- `StampedLock`
+- `Condition`
+
+### Modern Concurrency
+- `CompletableFuture`
+- Async pipelines
+- Composition vs blocking
+- Exception handling in async flows
+- Fork/Join Framework
+- Parallel streams
+
+---
+
+## Chapter 9 — Inner Classes
+
+- Member inner class
+- Static nested class
+- Local inner class
+- Anonymous inner class
+- Access rules
+- Capturing local variables
+- Inner class vs nested class
+- Use cases
+
+---
+
+## Chapter 10 — `java.lang` Package
+
+### Core Classes
+- `Object`
+- `String`
+- `StringBuilder`
+- `StringBuffer`
+- Wrapper classes
+- `System`
+- `Math`
+- `Class`
+- `Enum`
+
+### High-Priority Topics
+- `equals()` vs `==`
+- `hashCode()` contract
+- String pool
+- Immutability
+- Wrapper caching / autoboxing
+- `String` vs `StringBuilder` vs `StringBuffer`
+
+---
+
+## Chapter 11 — File I/O
+
+### Streams
+- Byte streams
+- Character streams
+- `InputStream`
+- `OutputStream`
+- `Reader`
+- `Writer`
+
+### File APIs
+- `File`
+- `FileInputStream`
+- `FileOutputStream`
+- `BufferedReader`
+- `BufferedWriter`
+
+### Modern NIO
+- `Path`
+- `Paths`
+- `Files`
+- `Channels`
+- `Buffers`
+- Directory traversal
+
+---
+
+## Chapter 12 — Serialization
+
+- Serialization
+- Deserialization
+- `Serializable`
+- `transient`
+- `static` vs `transient`
+- `transient` vs `final`
+- Object graph
+- Custom serialization
+- Serialization with inheritance
+- `Externalizable`
+- Serialization vs Externalization
+- `serialVersionUID`
+- Serialization compatibility
+
+---
+
+## Chapter 13 — Regular Expressions
+
+- Regex basics
+- Character classes
+- Quantifiers
+- Groups
+- Alternation
+- Anchors
+- `Pattern`
+- `Matcher`
+- `matches()` vs `find()` vs `lookingAt()`
+- Common validation patterns
+
+---
+
+## Chapter 14 — Collections Framework
+
+### Collection Hierarchy
+- `Collection`
+- `List`
+- `Set`
+- `Queue`
+- `Deque`
+- `Map` hierarchy
+
+### List
+- `ArrayList`
+- `LinkedList`
+- `Vector`
+- `Stack`
+
+### Set
+- `HashSet`
+- `LinkedHashSet`
+- `TreeSet`
+
+### Map
+- `HashMap`
+- `LinkedHashMap`
+- `TreeMap`
+- `Hashtable`
+- `ConcurrentHashMap`
+
+### Queue / Deque
+- `PriorityQueue`
+- `ArrayDeque`
+
+### Must-Know Internals
+- HashMap internal working
+- Hash collision
+- Java 8 treeification
+- Load factor
+- Resize
+- Fail-fast vs fail-safe / weakly consistent iteration
+- `equals()` + `hashCode()` contract
+- Comparable vs Comparator
+
+### Complexity & Selection
+- ArrayList vs LinkedList
+- HashMap vs TreeMap
+- HashSet vs TreeSet
+- HashMap vs ConcurrentHashMap
+- PriorityQueue use cases
+
+---
+
+## Chapter 15 — Generics
+
+- Generic introduction
+- Type safety
+- Generic classes
+- Generic methods
+- Generic interfaces
+- Bounded types
+- Upper bounds `extends`
+- Lower bounds `super`
+- Wildcard `?`
+- PECS
+- Type erasure
+- Raw types
+- Generic arrays limitations
+- Generic varargs
+- Interoperability with non-generic code
+
+---
+
+## Chapter 16 — Garbage Collection
+
+### Basics
+- What is garbage collection?
+- Reachability
+- Strong references
+- Eligibility for GC
+
+### JVM Memory
+- Heap generations
+- Young generation
+- Old generation
+- Metaspace
+
+### GC Concepts
+- Minor GC
+- Major/old-generation collection
+- Full GC
+- Stop-the-world
+- GC roots
+- Object promotion
+- Memory leaks in managed languages
+
+### Modern GC Overview
+- Serial GC
+- Parallel GC
+- G1 GC
+- ZGC
+- Shenandoah
+
+### Interview Focus
+- `System.gc()` hint
+- Finalization deprecation/removal context
+- Memory leak vs memory overflow
+- Heap dump basics
+
+---
+
+## Chapter 17 — Enum
+
+- Enum basics
+- Enum constants
+- Enum fields
+- Enum constructors
+- Enum methods
+- `values()`
+- `valueOf()`
+- Enum in switch
+- EnumSet
+- EnumMap
+- Enum singleton pattern
+
+---
+
+## Chapter 18 — Internationalization (i18n)
+
+- Locale
+- ResourceBundle
+- Message formatting
+- Number formatting
+- Date/time formatting
+- Currency formatting
+- Unicode basics
+
+---
+
+## Chapter 19 — Development / Java Platform Essentials
+
+- Packages
+- Imports
+- Compilation
+- Classpath
+- Module-path basics
+- JARs
+- Dependency management concepts
+- Build lifecycle basics
+- IDE vs compiler behavior
+- Coding/debugging workflow
+
+---
+
+## Chapter 20 — Assertions
+
+- What are assertions?
+- `assert` syntax
+- Enabling/disabling assertions
+- Assertions vs exceptions
+- When not to use assertions
+
+---
+
+## Chapter 21 — JVM Architecture
+
+### JVM Components
+- Class Loader Subsystem
+- Runtime Data Areas
+- Execution Engine
+- Interpreter
+- JIT Compiler
+- Garbage Collector
+- JNI
+
+### Class Loading
+- Loading
+- Linking
+- Verification
+- Preparation
+- Resolution
+- Initialization
+
+### Runtime Memory
+- Heap
+- Stack
+- PC register
+- Native method stack
+- Metaspace
+
+### Interview Focus
+- JVM vs JRE vs JDK
+- ClassLoader hierarchy
+- Parent delegation
+- JIT compilation
+- StackOverflowError
+- OutOfMemoryError
+
+---
+
+## Chapter 22 — Java 8+ New Features
+
+### Java 8
+- Lambda expressions
+- Functional interfaces
+- Method references
+- Stream API
+- `Optional`
+- Default methods
+- Static interface methods
+- New Date/Time API
+
+### Stream API
+- `filter`
+- `map`
+- `flatMap`
+- `sorted`
+- `distinct`
+- `limit`
+- `skip`
+- `reduce`
+- `collect`
+- `groupingBy`
+- `partitioningBy`
+- Parallel streams
+
+### Java 9+
+- Private interface methods
+- Factory methods for collections
+- `Optional` enhancements
+- Reactive Streams interfaces overview
+
+### Java 10+
+- `var`
+
+### Java 11+
+- String convenience methods
+- HTTP Client overview
+
+### Java 14+
+- Switch expressions
+
+### Java 15+
+- Text blocks
+
+### Java 16+
+- Pattern matching for `instanceof`
+- Records
+
+### Java 17+
+- Sealed classes
+- Strong encapsulation context
+
+### Modern Java
+- Pattern matching evolution
+- Record patterns overview
+- Modern switch pattern matching
+- Virtual threads overview (Java 21+)
+- Structured concurrency concepts
+
+---
+
+## Chapter 23 — String
+
+### Fundamentals
+- String immutability
+- String pool
+- String literals vs `new String()`
+- `==` vs `equals()`
+- `intern()`
+
+### String Manipulation
+- `substring`
+- `charAt`
+- `indexOf`
+- `contains`
+- `split`
+- `replace`
+- `trim`
+- `strip`
+- `concat`
+
+### StringBuilder / StringBuffer
+- Mutable strings
+- Performance
+- Thread-safety difference
+
+### Interview Focus
+- Why String is immutable
+- String pool internals
+- Why String is a good HashMap key
+- String concatenation internals
+- `StringBuilder` vs `StringBuffer`
+
+---
+
+# Interview Priority Map
+
+## 🔥 Priority 1 — Must Master
+- OOPs
+- String / Immutability
+- Collections
+- HashMap internals
+- `equals()` / `hashCode()`
+- Exception Handling
+- Multithreading
+- Executor Framework
+- Java 8 Stream API
+- Lambda / Functional Interface
+- JVM Architecture
+- Garbage Collection
+
+## 🔥 Priority 2 — Strong Understanding
+- Generics
+- Inner Classes
+- Serialization
+- File I/O
+- Regular Expressions
+- Enum
+- Java 8+ features
+
+## 🔥 Priority 3 — Revision Topics
+- Assertions
+- Internationalization
+- Java development basics
+
+---
+
+# Interview Preparation Strategy
+
+For every chapter:
+
+```text
+Concept
+  ↓
+Internal Working
+  ↓
+Example
+  ↓
+Code
+  ↓
+Common Mistakes
+  ↓
+Interview Questions
+  ↓
+2-Minute Answer
+  ↓
+Revision
+```
+
+### Goal
+
+> **You should be able to explain every Priority-1 Core Java topic clearly in 2 minutes and deep-dive into follow-up questions.**
+
+---
+
+## Source Roadmap
+
+The chapter structure above is based on the existing Core Java roadmap in this repository, reorganized into an interview-oriented format. The original repository already listed chapters covering language fundamentals, operators, flow control, declarations/access modifiers, OOP, exception handling, multithreading, collections, generics, GC, JVM architecture, Java 8 features and String topics. 
