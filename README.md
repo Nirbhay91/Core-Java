@@ -69,7 +69,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.26 | Monitor Ownership with `wait/notify` | ✅ Completed | [Open](07-Multithreading-Fundamentals/26-Monitor-Ownership-with-wait-notify/README.md) |
 | 7.27 | `wait()` vs `sleep()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/27-wait-vs-sleep/README.md) |
 | 7.28 | Thread Interruption | ✅ Completed | [Open](07-Multithreading-Fundamentals/28-Thread-Interruption/README.md) |
-| 7.29 | `interrupt()` | ⏳ Pending | — |
+| 7.29 | `interrupt()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/29-interrupt/README.md) |
 | 7.30 | Deadlock | ⏳ Pending | — |
 | 7.31 | Starvation | ⏳ Pending | — |
 | 7.32 | Livelock | ⏳ Pending | — |
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.28 Thread Interruption → ✅ Completed**
+**Current Progress → Chapter 7 → 7.29 `interrupt()` → ✅ Completed**
 
-**Next → 7.29 — `interrupt()`**
+**Next → 7.30 — Deadlock**
