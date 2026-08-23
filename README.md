@@ -12,7 +12,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 4 | Declarations & Access Modifiers | ⏳ Pending | — |
 | 5 | OOPs | ⏳ Pending | — |
 | 6 | Exception Handling | ⏳ Pending | — |
-| 7 | Multithreading Fundamentals | ⏳ Pending | — |
+| 7 | **Multithreading Fundamentals** | 🚧 In Progress | [Open](07-Multithreading-Fundamentals/README.md) |
 | 8 | Multithreading Enhancements / Concurrency Utilities | ⏳ Pending | — |
 | 9 | Inner Classes | ⏳ Pending | — |
 | 10 | `java.lang` Package | ⏳ Pending | — |
@@ -315,37 +315,64 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 
 # Chapter 7 — Multithreading Fundamentals
 
-### Thread Basics
-- Process vs thread
-- Creating threads
-- `Thread` class
-- `Runnable`
-- Thread lifecycle
-- `Thread.State`
+> **Status:** 🚧 In Progress  
+> **Goal:** Build strong Core Java concurrency fundamentals before moving to executors, concurrent collections, locks and `CompletableFuture`.
 
-### Synchronization
-- Race condition
-- Critical section
-- `synchronized` method
-- `synchronized` block
-- Intrinsic monitor / lock
+## 📋 Topic / Subtopic Tracker
 
-### Thread Communication
-- `wait()`
-- `notify()`
-- `notifyAll()`
-- `sleep()`
-- `join()`
-- `yield()`
+| # | Topic / Subtopic | Status | Link |
+|---:|---|---|---|
+| 7.1 | Process vs Thread | ⏳ Pending | — |
+| 7.2 | Thread Creation — `Thread` class | ⏳ Pending | — |
+| 7.3 | Thread Creation — `Runnable` | ⏳ Pending | — |
+| 7.4 | Thread Lifecycle | ⏳ Pending | — |
+| 7.5 | `Thread.State` and `RUNNABLE` | ⏳ Pending | — |
+| 7.6 | Thread Naming & Basic Thread APIs | ⏳ Pending | — |
+| 7.7 | `start()` vs `run()` | ⏳ Pending | — |
+| 7.8 | `sleep()` | ⏳ Pending | — |
+| 7.9 | `join()` | ⏳ Pending | — |
+| 7.10 | `yield()` | ⏳ Pending | — |
+| 7.11 | Race Condition | ⏳ Pending | — |
+| 7.12 | Critical Section | ⏳ Pending | — |
+| 7.13 | `synchronized` Method | ⏳ Pending | — |
+| 7.14 | `synchronized` Block | ⏳ Pending | — |
+| 7.15 | Intrinsic Monitor / Object Lock | ⏳ Pending | — |
+| 7.16 | Class Lock vs Object Lock | ⏳ Pending | — |
+| 7.17 | Reentrancy of `synchronized` | ⏳ Pending | — |
+| 7.18 | Thread Safety | ⏳ Pending | — |
+| 7.19 | Atomicity vs Visibility vs Ordering | ⏳ Pending | — |
+| 7.20 | Happens-Before Relationship | ⏳ Pending | — |
+| 7.21 | `volatile` Fundamentals | ⏳ Pending | — |
+| 7.22 | `volatile` vs `synchronized` | ⏳ Pending | — |
+| 7.23 | `wait()` | ⏳ Pending | — |
+| 7.24 | `notify()` | ⏳ Pending | — |
+| 7.25 | `notifyAll()` | ⏳ Pending | — |
+| 7.26 | Monitor Ownership with `wait/notify` | ⏳ Pending | — |
+| 7.27 | `wait()` vs `sleep()` | ⏳ Pending | — |
+| 7.28 | Thread Interruption | ⏳ Pending | — |
+| 7.29 | `interrupt()` | ⏳ Pending | — |
+| 7.30 | Deadlock | ⏳ Pending | — |
+| 7.31 | Starvation | ⏳ Pending | — |
+| 7.32 | Livelock | ⏳ Pending | — |
+| 7.33 | Thread Communication Patterns | ⏳ Pending | — |
+| 7.34 | Common Thread-Safety Strategies | ⏳ Pending | — |
+| 7.35 | Multithreading Interview Scenarios | ⏳ Pending | — |
+| 7.36 | Multithreading Quick Revision | ⏳ Pending | — |
+| 7.37 | Multithreading Final Assessment | ⏳ Pending | — |
 
-### Important Concepts
-- Thread safety
-- Visibility
-- Atomicity
-- Ordering
-- Deadlock
-- Starvation
-- Livelock
+### Completion Rule
+
+A Chapter 7 topic is marked **✅ Completed** only after:
+
+```text
+Concept
++ Internal Working
++ Example
++ Code
++ Common Mistakes
++ Interview Questions
++ Quick Revision
+```
 
 ---
 
@@ -812,27 +839,6 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 
 ---
 
-# Standard Topic Completion Format
-
-For every Core Java topic we will create:
-
-```text
-01-Concepts
-02-Internal-Working
-03-Examples
-04-Code
-05-Common-Mistakes
-06-Interview-Questions
-07-2-Minute-Answer
-08-Quick-Revision
-```
-
-### Completion Rule
-
-A topic becomes **✅ Completed** only when its concepts, internals, examples, code, interview questions and revision are covered.
-
----
-
 # Interview Preparation Strategy
 
 For every chapter:
@@ -859,5 +865,7 @@ Revision
 
 > **You should be able to explain every Priority-1 Core Java topic clearly in 2 minutes and deep-dive into follow-up questions.**
 
-**Current status:** 🚧 Core Java roadmap formatted.  
-**Next:** Chapter 1 — Java Language Fundamentals.
+---
+
+**Current focus:** Chapter 7 — Multithreading Fundamentals  
+**Next:** Complete Chapter 7 topics one-by-one in the tracker above.
