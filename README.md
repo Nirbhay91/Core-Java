@@ -62,7 +62,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.19 | Atomicity vs Visibility vs Ordering | ✅ Completed | [Open](07-Multithreading-Fundamentals/19-Atomicity-Visibility-Ordering/README.md) |
 | 7.20 | Happens-Before Relationship | ✅ Completed | [Open](07-Multithreading-Fundamentals/20-Happens-Before-Relationship/README.md) |
 | 7.21 | `volatile` Fundamentals | ✅ Completed | [Open](07-Multithreading-Fundamentals/21-Volatile-Fundamentals/README.md) |
-| 7.22 | `volatile` vs `synchronized` | ⏳ Pending | — |
+| 7.22 | `volatile` vs `synchronized` | ✅ Completed | [Open](07-Multithreading-Fundamentals/22-Volatile-vs-Synchronized/README.md) |
 | 7.23 | `wait()` | ⏳ Pending | — |
 | 7.24 | `notify()` | ⏳ Pending | — |
 | 7.25 | `notifyAll()` | ⏳ Pending | — |
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.21 `volatile` Fundamentals → ✅ Completed**
+**Current Progress → Chapter 7 → 7.22 `volatile` vs `synchronized` → ✅ Completed**
 
-**Next → 7.22 — `volatile` vs `synchronized`**
+**Next → 7.23 — `wait()`**
