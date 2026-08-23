@@ -21,7 +21,7 @@
 | 8.11 | `CountDownLatch` | ✅ Completed | [Open](11-CountDownLatch/README.md) |
 | 8.12 | `CyclicBarrier` | ✅ Completed | [Open](12-CyclicBarrier/README.md) |
 | 8.13 | `Semaphore` | ✅ Completed | [Open](13-Semaphore/README.md) |
-| 8.14 | `Exchanger` | ⏳ Pending | — |
+| 8.14 | `Exchanger` | ✅ Completed | [Open](14-Exchanger/README.md) |
 | 8.15 | `Phaser` | ⏳ Pending | — |
 | 8.16 | `ReentrantLock` | ⏳ Pending | — |
 | 8.17 | `tryLock()` and Timed Locking | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.13 — `Semaphore` → ✅ Completed**
+**Current → 8.14 — `Exchanger` → ✅ Completed**
 
-**Next → 8.14 — `Exchanger`**
+**Next → 8.15 — `Phaser`**
