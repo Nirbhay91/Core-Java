@@ -14,7 +14,7 @@
 | 8.4 | `shutdown()` vs `shutdownNow()` | ✅ Completed | [Open](04-shutdown-vs-shutdownNow/README.md) |
 | 8.5 | `Future` and `Callable` | ✅ Completed | [Open](05-Future-and-Callable/README.md) |
 | 8.6 | `ScheduledExecutorService` | ✅ Completed | [Open](06-ScheduledExecutorService/README.md) |
-| 8.7 | Thread Pool Types | ⏳ Pending | — |
+| 8.7 | Thread Pool Types | ✅ Completed | [Open](07-Thread-Pool-Types/README.md) |
 | 8.8 | `ThreadPoolExecutor` Internals | ⏳ Pending | — |
 | 8.9 | Queueing, Rejection Policies & Backpressure | ⏳ Pending | — |
 | 8.10 | Custom `ThreadFactory` | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.6 — `ScheduledExecutorService` → ✅ Completed**
+**Current → 8.7 — Thread Pool Types → ✅ Completed**
 
-**Next → 8.7 — Thread Pool Types**
+**Next → 8.8 — `ThreadPoolExecutor` Internals**
