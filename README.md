@@ -58,7 +58,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.15 | Intrinsic Monitor / Object Lock | ✅ Completed | [Open](07-Multithreading-Fundamentals/15-Intrinsic-Monitor-Object-Lock/README.md) |
 | 7.16 | Class Lock vs Object Lock | ✅ Completed | [Open](07-Multithreading-Fundamentals/16-Class-Lock-vs-Object-Lock/README.md) |
 | 7.17 | Reentrancy of `synchronized` | ✅ Completed | [Open](07-Multithreading-Fundamentals/17-Reentrancy-of-Synchronized/README.md) |
-| 7.18 | Thread Safety | ⏳ Pending | — |
+| 7.18 | Thread Safety | ✅ Completed | [Open](07-Multithreading-Fundamentals/18-Thread-Safety/README.md) |
 | 7.19 | Atomicity vs Visibility vs Ordering | ⏳ Pending | — |
 | 7.20 | Happens-Before Relationship | ⏳ Pending | — |
 | 7.21 | `volatile` Fundamentals | ⏳ Pending | — |
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.17 Reentrancy of `synchronized` → ✅ Completed**
+**Current Progress → Chapter 7 → 7.18 Thread Safety → ✅ Completed**
 
-**Next → 7.18 — Thread Safety**
+**Next → 7.19 — Atomicity vs Visibility vs Ordering**
