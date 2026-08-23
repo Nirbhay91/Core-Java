@@ -28,7 +28,7 @@ By the end of this chapter, you should be able to answer:
 | # | Topic | Status | Link |
 |---:|---|---|---|
 | 8.1 | `Executor` and `ExecutorService` Fundamentals | ✅ Completed | [Open](01-Executor-and-ExecutorService-Fundamentals/README.md) |
-| 8.2 | Thread Pool Fundamentals | ⏳ Pending | — |
+| 8.2 | Thread Pool Fundamentals | ✅ Completed | [Open](02-Thread-Pool-Fundamentals/README.md) |
 | 8.3 | `execute()` vs `submit()` | ⏳ Pending | — |
 | 8.4 | `shutdown()` vs `shutdownNow()` | ⏳ Pending | — |
 | 8.5 | `Future` and `Callable` | ⏳ Pending | — |
@@ -134,6 +134,6 @@ Chapter 8 will be marked **✅ Completed** only after:
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.1 — `Executor` and `ExecutorService` Fundamentals → ✅ Completed**
+**Current → 8.2 — Thread Pool Fundamentals → ✅ Completed**
 
-**Next → 8.2 — Thread Pool Fundamentals**
+**Next → 8.3 — `execute()` vs `submit()`**
