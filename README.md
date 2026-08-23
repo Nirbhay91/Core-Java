@@ -72,7 +72,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.29 | `interrupt()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/29-interrupt/README.md) |
 | 7.30 | Deadlock | ✅ Completed | [Open](07-Multithreading-Fundamentals/30-Deadlock/README.md) |
 | 7.31 | Starvation | ✅ Completed | [Open](07-Multithreading-Fundamentals/31-Starvation/README.md) |
-| 7.32 | Livelock | ⏳ Pending | — |
+| 7.32 | Livelock | ✅ Completed | [Open](07-Multithreading-Fundamentals/32-Livelock/README.md) |
 | 7.33 | Thread Communication Patterns | ⏳ Pending | — |
 | 7.34 | Common Thread-Safety Strategies | ⏳ Pending | — |
 | 7.35 | Multithreading Interview Scenarios | ⏳ Pending | — |
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.31 Starvation → ✅ Completed**
+**Current Progress → Chapter 7 → 7.32 Livelock → ✅ Completed**
 
-**Next → 7.32 — Livelock**
+**Next → 7.33 — Thread Communication Patterns**
