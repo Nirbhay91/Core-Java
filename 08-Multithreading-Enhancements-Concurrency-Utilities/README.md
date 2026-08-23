@@ -16,7 +16,7 @@
 | 8.6 | `ScheduledExecutorService` | ✅ Completed | [Open](06-ScheduledExecutorService/README.md) |
 | 8.7 | Thread Pool Types | ✅ Completed | [Open](07-Thread-Pool-Types/README.md) |
 | 8.8 | `ThreadPoolExecutor` Internals | ✅ Completed | [Open](08-ThreadPoolExecutor-Internals/README.md) |
-| 8.9 | Queueing, Rejection Policies & Backpressure | ⏳ Pending | — |
+| 8.9 | Queueing, Rejection Policies & Backpressure | ✅ Completed | [Open](09-Queueing-Rejection-Policies-and-Backpressure/README.md) |
 | 8.10 | Custom `ThreadFactory` | ⏳ Pending | — |
 | 8.11 | `CountDownLatch` | ⏳ Pending | — |
 | 8.12 | `CyclicBarrier` | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.8 — `ThreadPoolExecutor` Internals → ✅ Completed**
+**Current → 8.9 — Queueing, Rejection Policies & Backpressure → ✅ Completed**
 
-**Next → 8.9 — Queueing, Rejection Policies & Backpressure**
+**Next → 8.10 — Custom `ThreadFactory`**
