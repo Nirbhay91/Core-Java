@@ -55,7 +55,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.12 | Critical Section | ✅ Completed | [Open](07-Multithreading-Fundamentals/12-Critical-Section/README.md) |
 | 7.13 | `synchronized` Method | ✅ Completed | [Open](07-Multithreading-Fundamentals/13-Synchronized-Method/README.md) |
 | 7.14 | `synchronized` Block | ✅ Completed | [Open](07-Multithreading-Fundamentals/14-Synchronized-Block/README.md) |
-| 7.15 | Intrinsic Monitor / Object Lock | ⏳ Pending | — |
+| 7.15 | Intrinsic Monitor / Object Lock | ✅ Completed | [Open](07-Multithreading-Fundamentals/15-Intrinsic-Monitor-Object-Lock/README.md) |
 | 7.16 | Class Lock vs Object Lock | ⏳ Pending | — |
 | 7.17 | Reentrancy of `synchronized` | ⏳ Pending | — |
 | 7.18 | Thread Safety | ⏳ Pending | — |
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.14 `synchronized` Block → ✅ Completed**
+**Current Progress → Chapter 7 → 7.15 Intrinsic Monitor / Object Lock → ✅ Completed**
 
-**Next → 7.15 — Intrinsic Monitor / Object Lock**
+**Next → 7.16 — Class Lock vs Object Lock**
