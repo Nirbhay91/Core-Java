@@ -46,7 +46,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.3 | Thread Creation — `Runnable` | ✅ Completed | [Open](07-Multithreading-Fundamentals/03-Thread-Creation-Runnable/README.md) |
 | 7.4 | Thread Lifecycle | ✅ Completed | [Open](07-Multithreading-Fundamentals/04-Thread-Lifecycle/README.md) |
 | 7.5 | `Thread.State` and `RUNNABLE` | ✅ Completed | [Open](07-Multithreading-Fundamentals/05-Thread-State-and-Runnable/README.md) |
-| 7.6 | Thread Naming & Basic Thread APIs | ⏳ Pending | — |
+| 7.6 | Thread Naming & Basic Thread APIs | ✅ Completed | [Open](07-Multithreading-Fundamentals/06-Thread-Naming-and-Basic-Thread-APIs/README.md) |
 | 7.7 | `start()` vs `run()` | ⏳ Pending | — |
 | 7.8 | `sleep()` | ⏳ Pending | — |
 | 7.9 | `join()` | ⏳ Pending | — |
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.5 `Thread.State` and `RUNNABLE` → ✅ Completed**
+**Current Progress → Chapter 7 → 7.6 Thread Naming & Basic Thread APIs → ✅ Completed**
 
-**Next → 7.6 — Thread Naming & Basic Thread APIs**
+**Next → 7.7 — `start()` vs `run()`**
