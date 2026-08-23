@@ -60,7 +60,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.17 | Reentrancy of `synchronized` | ✅ Completed | [Open](07-Multithreading-Fundamentals/17-Reentrancy-of-Synchronized/README.md) |
 | 7.18 | Thread Safety | ✅ Completed | [Open](07-Multithreading-Fundamentals/18-Thread-Safety/README.md) |
 | 7.19 | Atomicity vs Visibility vs Ordering | ✅ Completed | [Open](07-Multithreading-Fundamentals/19-Atomicity-Visibility-Ordering/README.md) |
-| 7.20 | Happens-Before Relationship | ⏳ Pending | — |
+| 7.20 | Happens-Before Relationship | ✅ Completed | [Open](07-Multithreading-Fundamentals/20-Happens-Before-Relationship/README.md) |
 | 7.21 | `volatile` Fundamentals | ⏳ Pending | — |
 | 7.22 | `volatile` vs `synchronized` | ⏳ Pending | — |
 | 7.23 | `wait()` | ⏳ Pending | — |
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.19 Atomicity vs Visibility vs Ordering → ✅ Completed**
+**Current Progress → Chapter 7 → 7.20 Happens-Before Relationship → ✅ Completed**
 
-**Next → 7.20 — Happens-Before Relationship**
+**Next → 7.21 — `volatile` Fundamentals**
