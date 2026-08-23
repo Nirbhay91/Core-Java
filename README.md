@@ -52,7 +52,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.9 | `join()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/09-join/README.md) |
 | 7.10 | `yield()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/10-yield/README.md) |
 | 7.11 | Race Condition | ✅ Completed | [Open](07-Multithreading-Fundamentals/11-Race-Condition/README.md) |
-| 7.12 | Critical Section | ⏳ Pending | — |
+| 7.12 | Critical Section | ✅ Completed | [Open](07-Multithreading-Fundamentals/12-Critical-Section/README.md) |
 | 7.13 | `synchronized` Method | ⏳ Pending | — |
 | 7.14 | `synchronized` Block | ⏳ Pending | — |
 | 7.15 | Intrinsic Monitor / Object Lock | ⏳ Pending | — |
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.11 `Race Condition` → ✅ Completed**
+**Current Progress → Chapter 7 → 7.12 `Critical Section` → ✅ Completed**
 
-**Next → 7.12 — Critical Section**
+**Next → 7.13 — `synchronized` Method**
