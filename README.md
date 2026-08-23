@@ -322,7 +322,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 
 | # | Topic / Subtopic | Status | Link |
 |---:|---|---|---|
-| 7.1 | Process vs Thread | ⏳ Pending | — |
+| 7.1 | Process vs Thread | ✅ Completed | [Open](07-Multithreading-Fundamentals/01-Process-vs-Thread/README.md) |
 | 7.2 | Thread Creation — `Thread` class | ⏳ Pending | — |
 | 7.3 | Thread Creation — `Runnable` | ⏳ Pending | — |
 | 7.4 | Thread Lifecycle | ⏳ Pending | — |
@@ -830,42 +830,28 @@ Concept
 - File I/O
 - Regular Expressions
 - Enum
-- Java 8+ features
-
-## 🔥 Priority 3 — Revision Topics
-- Assertions
 - Internationalization
-- Java development basics
+- Assertions
 
----
+## 📌 Standard Topic Completion Format
 
-# Interview Preparation Strategy
-
-For every chapter:
+Every topic should be completed in this order:
 
 ```text
-Concept
-  ↓
-Internal Working
-  ↓
-Example
-  ↓
-Code
-  ↓
-Common Mistakes
-  ↓
-Interview Questions
-  ↓
-2-Minute Answer
-  ↓
-Revision
+1. Concept
+2. Why it exists
+3. Internal Working
+4. Example
+5. Java Code
+6. Common Mistakes
+7. Interview Questions
+8. 2-Minute Interview Answer
+9. Quick Revision
+10. Final Assessment
 ```
 
-### Goal
+### Current Progress
 
-> **You should be able to explain every Priority-1 Core Java topic clearly in 2 minutes and deep-dive into follow-up questions.**
+**Chapter 7 → 7.1 Process vs Thread → ✅ Completed**
 
----
-
-**Current focus:** Chapter 7 — Multithreading Fundamentals  
-**Next:** Complete Chapter 7 topics one-by-one in the tracker above.
+**Next → 7.2 Thread Creation — `Thread` class**
