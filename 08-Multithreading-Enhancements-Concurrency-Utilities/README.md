@@ -30,7 +30,7 @@
 | 8.20 | `Condition` | ✅ Completed | [Open](20-Condition/README.md) |
 | 8.21 | Atomic Variables & CAS | ✅ Completed | [Open](21-Atomic-Variables-and-CAS/README.md) |
 | 8.22 | `LongAdder` / `LongAccumulator` | ✅ Completed | [Open](22-LongAdder-and-LongAccumulator/README.md) |
-| 8.23 | Concurrent Collections Overview | ⏳ Pending | — |
+| 8.23 | Concurrent Collections Overview | ✅ Completed | [Open](23-Concurrent-Collections-Overview/README.md) |
 | 8.24 | `ConcurrentHashMap` Deep Dive | ⏳ Pending | — |
 | 8.25 | `CopyOnWriteArrayList` | ⏳ Pending | — |
 | 8.26 | `BlockingQueue` Implementations | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.22 — `LongAdder` / `LongAccumulator` → ✅ Completed**
+**Current → 8.23 — Concurrent Collections Overview → ✅ Completed**
 
-**Next → 8.23 — Concurrent Collections Overview**
+**Next → 8.24 — `ConcurrentHashMap` Deep Dive**
