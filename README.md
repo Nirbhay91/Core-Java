@@ -1,8 +1,38 @@
 # Core Java — Interview Preparation Roadmap
 
-A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repository is organized from fundamentals to advanced JVM topics so that topics can be studied and revised systematically.
+A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topic will be studied and completed one-by-one with a consistent structure: concept → internals → examples → code → interview questions → revision.
 
-## Chapter 1 — Java Language Fundamentals
+## 🎯 Learning Sequence
+
+| # | Topic | Status | Link |
+|---:|---|---|---|
+| 1 | Java Language Fundamentals | ⏳ Pending | — |
+| 2 | Operators & Assignments | ⏳ Pending | — |
+| 3 | Flow Control | ⏳ Pending | — |
+| 4 | Declarations & Access Modifiers | ⏳ Pending | — |
+| 5 | OOPs | ⏳ Pending | — |
+| 6 | Exception Handling | ⏳ Pending | — |
+| 7 | Multithreading Fundamentals | ⏳ Pending | — |
+| 8 | Multithreading Enhancements / Concurrency Utilities | ⏳ Pending | — |
+| 9 | Inner Classes | ⏳ Pending | — |
+| 10 | `java.lang` Package | ⏳ Pending | — |
+| 11 | File I/O | ⏳ Pending | — |
+| 12 | Serialization | ⏳ Pending | — |
+| 13 | Regular Expressions | ⏳ Pending | — |
+| 14 | Collections Framework | ⏳ Pending | — |
+| 15 | Generics | ⏳ Pending | — |
+| 16 | Garbage Collection | ⏳ Pending | — |
+| 17 | Enum | ⏳ Pending | — |
+| 18 | Internationalization (i18n) | ⏳ Pending | — |
+| 19 | Development / Java Platform Essentials | ⏳ Pending | — |
+| 20 | Assertions | ⏳ Pending | — |
+| 21 | JVM Architecture | ⏳ Pending | — |
+| 22 | Java 8+ New Features | ⏳ Pending | — |
+| 23 | String | ⏳ Pending | — |
+
+---
+
+# Chapter 1 — Java Language Fundamentals
 
 ### 1. Introduction
 - What is Java?
@@ -30,17 +60,11 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ### 4. Data Types
 - Primitive vs reference types
-- Integral types
-  - `byte`
-  - `short`
-  - `int`
-  - `long`
-- Floating-point types
-  - `float`
-  - `double`
+- Integral types: `byte`, `short`, `int`, `long`
+- Floating-point types: `float`, `double`
 - `boolean`
 - `char`
-- Primitive data type ranges and defaults
+- Primitive ranges and defaults
 - Is Java purely object-oriented?
 
 ### 5. Literals
@@ -54,12 +78,12 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ### 6. Arrays
 - Array introduction
-- Array declaration
+- Declaration
 - Single-dimensional arrays
 - Two-dimensional arrays
 - Multi-dimensional arrays
-- Array construction
-- Array initialization
+- Construction
+- Initialization
 - Declaration + construction + initialization
 - `length` vs `length()`
 - Anonymous arrays
@@ -77,7 +101,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ### 8. Varargs
 - Varargs syntax
-- Varargs method invocation
+- Varargs invocation
 - Single-dimensional array vs varargs
 
 ### 9. Main Method
@@ -109,7 +133,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 2 — Operators & Assignments
+# Chapter 2 — Operators & Assignments
 
 ### Operators
 - Increment and decrement
@@ -135,9 +159,9 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 3 — Flow Control
+# Chapter 3 — Flow Control
 
-### Selection Statements
+### Selection
 - `if`
 - `if-else`
 - Nested `if`
@@ -146,7 +170,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 - Fall-through
 - `default`
 
-### Iterative Statements
+### Iterative
 - `while`
 - `do-while`
 - `for`
@@ -161,7 +185,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 - `Iterator`
 - `Iterable` vs `Iterator`
 
-### Transfer Statements
+### Transfer
 - `break`
 - `continue`
 - Labeled `break`
@@ -170,7 +194,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 4 — Declarations & Access Modifiers
+# Chapter 4 — Declarations & Access Modifiers
 
 ### Modifiers
 - `public`
@@ -194,20 +218,20 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 5 — OOPs
+# Chapter 5 — OOPs
 
-### 1. Class & Object
+### Class & Object
 - Class
 - Object
 - State and behavior
 - Object creation
 
-### 2. Encapsulation
+### Encapsulation
 - Data hiding
 - Getters/setters
 - Immutability connection
 
-### 3. Inheritance
+### Inheritance
 - Single inheritance
 - Multilevel inheritance
 - Hierarchical inheritance
@@ -215,31 +239,31 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 - `super`
 - Constructor chaining
 
-### 4. Polymorphism
+### Polymorphism
 - Compile-time polymorphism
 - Method overloading
 - Runtime polymorphism
 - Method overriding
 - Dynamic method dispatch
 
-### 5. Abstraction
+### Abstraction
 - Abstract class
 - Abstract method
 - Interface
 - Abstraction use cases
 
-### 6. Relationships
+### Relationships
 - Association
 - Aggregation
 - Composition
 - Dependency
 
-### 7. Coupling & Cohesion
+### Coupling & Cohesion
 - Tight coupling
 - Loose coupling
 - High cohesion
 
-### 8. Must-Know Comparisons
+### Must-Know Comparisons
 - Abstract class vs interface
 - Overloading vs overriding
 - Aggregation vs composition
@@ -248,7 +272,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 6 — Exception Handling
+# Chapter 6 — Exception Handling
 
 ### Fundamentals
 - What is an exception?
@@ -289,7 +313,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 7 — Multithreading Fundamentals
+# Chapter 7 — Multithreading Fundamentals
 
 ### Thread Basics
 - Process vs thread
@@ -325,7 +349,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 8 — Multithreading Enhancements / Concurrency Utilities
+# Chapter 8 — Multithreading Enhancements / Concurrency Utilities
 
 ### Executor Framework
 - `Executor`
@@ -366,7 +390,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 9 — Inner Classes
+# Chapter 9 — Inner Classes
 
 - Member inner class
 - Static nested class
@@ -379,7 +403,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 10 — `java.lang` Package
+# Chapter 10 — `java.lang` Package
 
 ### Core Classes
 - `Object`
@@ -402,7 +426,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 11 — File I/O
+# Chapter 11 — File I/O
 
 ### Streams
 - Byte streams
@@ -429,7 +453,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 12 — Serialization
+# Chapter 12 — Serialization
 
 - Serialization
 - Deserialization
@@ -447,7 +471,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 13 — Regular Expressions
+# Chapter 13 — Regular Expressions
 
 - Regex basics
 - Character classes
@@ -462,7 +486,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 14 — Collections Framework
+# Chapter 14 — Collections Framework
 
 ### Collection Hierarchy
 - `Collection`
@@ -500,7 +524,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 - Java 8 treeification
 - Load factor
 - Resize
-- Fail-fast vs fail-safe / weakly consistent iteration
+- Fail-fast vs weakly consistent iteration
 - `equals()` + `hashCode()` contract
 - Comparable vs Comparator
 
@@ -513,7 +537,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 15 — Generics
+# Chapter 15 — Generics
 
 - Generic introduction
 - Type safety
@@ -533,7 +557,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 16 — Garbage Collection
+# Chapter 16 — Garbage Collection
 
 ### Basics
 - What is garbage collection?
@@ -571,7 +595,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 17 — Enum
+# Chapter 17 — Enum
 
 - Enum basics
 - Enum constants
@@ -587,7 +611,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 18 — Internationalization (i18n)
+# Chapter 18 — Internationalization (i18n)
 
 - Locale
 - ResourceBundle
@@ -599,7 +623,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 19 — Development / Java Platform Essentials
+# Chapter 19 — Development / Java Platform Essentials
 
 - Packages
 - Imports
@@ -614,7 +638,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 20 — Assertions
+# Chapter 20 — Assertions
 
 - What are assertions?
 - `assert` syntax
@@ -624,7 +648,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 21 — JVM Architecture
+# Chapter 21 — JVM Architecture
 
 ### JVM Components
 - Class Loader Subsystem
@@ -660,7 +684,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 22 — Java 8+ New Features
+# Chapter 22 — Java 8+ New Features
 
 ### Java 8
 - Lambda expressions
@@ -722,7 +746,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
-## Chapter 23 — String
+# Chapter 23 — String
 
 ### Fundamentals
 - String immutability
@@ -788,6 +812,27 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. The repos
 
 ---
 
+# Standard Topic Completion Format
+
+For every Core Java topic we will create:
+
+```text
+01-Concepts
+02-Internal-Working
+03-Examples
+04-Code
+05-Common-Mistakes
+06-Interview-Questions
+07-2-Minute-Answer
+08-Quick-Revision
+```
+
+### Completion Rule
+
+A topic becomes **✅ Completed** only when its concepts, internals, examples, code, interview questions and revision are covered.
+
+---
+
 # Interview Preparation Strategy
 
 For every chapter:
@@ -814,8 +859,5 @@ Revision
 
 > **You should be able to explain every Priority-1 Core Java topic clearly in 2 minutes and deep-dive into follow-up questions.**
 
----
-
-## Source Roadmap
-
-The chapter structure above is based on the existing Core Java roadmap in this repository, reorganized into an interview-oriented format. The original repository already listed chapters covering language fundamentals, operators, flow control, declarations/access modifiers, OOP, exception handling, multithreading, collections, generics, GC, JVM architecture, Java 8 features and String topics. 
+**Current status:** 🚧 Core Java roadmap formatted.  
+**Next:** Chapter 1 — Java Language Fundamentals.
