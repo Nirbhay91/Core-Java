@@ -12,7 +12,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 4 | Declarations & Access Modifiers | ⏳ Pending | — |
 | 5 | OOPs | ⏳ Pending | — |
 | 6 | Exception Handling | ⏳ Pending | — |
-| 7 | **Multithreading Fundamentals** | 🚧 In Progress | [Open](07-Multithreading-Fundamentals/README.md) |
+| 7 | **Multithreading Fundamentals** | ✅ Completed | [Open](07-Multithreading-Fundamentals/README.md) |
 | 8 | Multithreading Enhancements / Concurrency Utilities | ⏳ Pending | — |
 | 9 | Inner Classes | ⏳ Pending | — |
 | 10 | `java.lang` Package | ⏳ Pending | — |
@@ -34,7 +34,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 
 # Chapter 7 — Multithreading Fundamentals
 
-> **Status:** 🚧 In Progress  
+> **Status:** ✅ Completed  
 > **Goal:** Build strong Core Java concurrency fundamentals before moving to executors, concurrent collections, locks and `CompletableFuture`.
 
 ## 📋 Topic / Subtopic Tracker
@@ -77,7 +77,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.34 | Common Thread-Safety Strategies | ✅ Completed | [Open](07-Multithreading-Fundamentals/34-Common-Thread-Safety-Strategies/README.md) |
 | 7.35 | Multithreading Interview Scenarios | ✅ Completed | [Open](07-Multithreading-Fundamentals/35-Multithreading-Interview-Scenarios/README.md) |
 | 7.36 | Multithreading Quick Revision | ✅ Completed | [Open](07-Multithreading-Fundamentals/36-Multithreading-Quick-Revision/README.md) |
-| 7.37 | Multithreading Final Assessment | ⏳ Pending | — |
+| 7.37 | Multithreading Final Assessment | ✅ Completed | [Open](07-Multithreading-Fundamentals/37-Multithreading-Final-Assessment/README.md) |
 
 ---
 
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.36 Multithreading Quick Revision → ✅ Completed**
+**Current Progress → Chapter 7 → 7.37 Multithreading Final Assessment → ✅ Completed**
 
-**Next → 7.37 — Multithreading Final Assessment**
+**Next → Chapter 8 — Multithreading Enhancements / Concurrency Utilities**
