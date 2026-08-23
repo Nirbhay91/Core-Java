@@ -12,7 +12,7 @@
 | 8.2 | Thread Pool Fundamentals | ✅ Completed | [Open](02-Thread-Pool-Fundamentals/README.md) |
 | 8.3 | `execute()` vs `submit()` | ✅ Completed | [Open](03-execute-vs-submit/README.md) |
 | 8.4 | `shutdown()` vs `shutdownNow()` | ✅ Completed | [Open](04-shutdown-vs-shutdownNow/README.md) |
-| 8.5 | `Future` and `Callable` | ⏳ Pending | — |
+| 8.5 | `Future` and `Callable` | ✅ Completed | [Open](05-Future-and-Callable/README.md) |
 | 8.6 | `ScheduledExecutorService` | ⏳ Pending | — |
 | 8.7 | Thread Pool Types | ⏳ Pending | — |
 | 8.8 | `ThreadPoolExecutor` Internals | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.4 — `shutdown()` vs `shutdownNow()` → ✅ Completed**
+**Current → 8.5 — `Future` and `Callable` → ✅ Completed**
 
-**Next → 8.5 — `Future` and `Callable`**
+**Next → 8.6 — `ScheduledExecutorService`**
