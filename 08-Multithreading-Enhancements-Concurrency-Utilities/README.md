@@ -18,7 +18,7 @@
 | 8.8 | `ThreadPoolExecutor` Internals | ✅ Completed | [Open](08-ThreadPoolExecutor-Internals/README.md) |
 | 8.9 | Queueing, Rejection Policies & Backpressure | ✅ Completed | [Open](09-Queueing-Rejection-Policies-and-Backpressure/README.md) |
 | 8.10 | Custom `ThreadFactory` | ✅ Completed | [Open](10-Custom-ThreadFactory/README.md) |
-| 8.11 | `CountDownLatch` | ⏳ Pending | — |
+| 8.11 | `CountDownLatch` | ✅ Completed | [Open](11-CountDownLatch/README.md) |
 | 8.12 | `CyclicBarrier` | ⏳ Pending | — |
 | 8.13 | `Semaphore` | ⏳ Pending | — |
 | 8.14 | `Exchanger` | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.10 — Custom `ThreadFactory` → ✅ Completed**
+**Current → 8.11 — `CountDownLatch` → ✅ Completed**
 
-**Next → 8.11 — `CountDownLatch`**
+**Next → 8.12 — `CyclicBarrier`**
