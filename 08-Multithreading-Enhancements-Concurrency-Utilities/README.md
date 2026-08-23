@@ -20,7 +20,7 @@
 | 8.10 | Custom `ThreadFactory` | ✅ Completed | [Open](10-Custom-ThreadFactory/README.md) |
 | 8.11 | `CountDownLatch` | ✅ Completed | [Open](11-CountDownLatch/README.md) |
 | 8.12 | `CyclicBarrier` | ✅ Completed | [Open](12-CyclicBarrier/README.md) |
-| 8.13 | `Semaphore` | ⏳ Pending | — |
+| 8.13 | `Semaphore` | ✅ Completed | [Open](13-Semaphore/README.md) |
 | 8.14 | `Exchanger` | ⏳ Pending | — |
 | 8.15 | `Phaser` | ⏳ Pending | — |
 | 8.16 | `ReentrantLock` | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.12 — `CyclicBarrier` → ✅ Completed**
+**Current → 8.13 — `Semaphore` → ✅ Completed**
 
-**Next → 8.13 — `Semaphore`**
+**Next → 8.14 — `Exchanger`**
