@@ -32,7 +32,7 @@
 | 8.22 | `LongAdder` / `LongAccumulator` | ✅ Completed | [Open](22-LongAdder-and-LongAccumulator/README.md) |
 | 8.23 | Concurrent Collections Overview | ✅ Completed | [Open](23-Concurrent-Collections-Overview/README.md) |
 | 8.24 | `ConcurrentHashMap` Deep Dive | ✅ Completed | [Open](24-ConcurrentHashMap-Deep-Dive/README.md) |
-| 8.25 | `CopyOnWriteArrayList` | ⏳ Pending | — |
+| 8.25 | `CopyOnWriteArrayList` | ✅ Completed | [Open](25-CopyOnWriteArrayList/README.md) |
 | 8.26 | `BlockingQueue` Implementations | ⏳ Pending | — |
 | 8.27 | `ArrayBlockingQueue` vs `LinkedBlockingQueue` | ⏳ Pending | — |
 | 8.28 | `PriorityBlockingQueue` / `DelayQueue` | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.24 — `ConcurrentHashMap` Deep Dive → ✅ Completed**
+**Current → 8.25 — `CopyOnWriteArrayList` → ✅ Completed**
 
-**Next → 8.25 — `CopyOnWriteArrayList`**
+**Next → 8.26 — `BlockingQueue` Implementations**
