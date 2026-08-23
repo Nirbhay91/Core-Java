@@ -24,7 +24,7 @@
 | 8.14 | `Exchanger` | ✅ Completed | [Open](14-Exchanger/README.md) |
 | 8.15 | `Phaser` | ✅ Completed | [Open](15-Phaser/README.md) |
 | 8.16 | `ReentrantLock` | ✅ Completed | [Open](16-ReentrantLock/README.md) |
-| 8.17 | `tryLock()` and Timed Locking | ⏳ Pending | — |
+| 8.17 | `tryLock()` and Timed Locking | ✅ Completed | [Open](17-tryLock-and-Timed-Locking/README.md) |
 | 8.18 | `ReentrantReadWriteLock` | ⏳ Pending | — |
 | 8.19 | `StampedLock` | ⏳ Pending | — |
 | 8.20 | `Condition` | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.16 — `ReentrantLock` → ✅ Completed**
+**Current → 8.17 — `tryLock()` and Timed Locking → ✅ Completed**
 
-**Next → 8.17 — `tryLock()` and Timed Locking**
+**Next → 8.18 — `ReentrantReadWriteLock`**
