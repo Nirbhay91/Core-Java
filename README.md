@@ -76,7 +76,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.33 | Thread Communication Patterns | ✅ Completed | [Open](07-Multithreading-Fundamentals/33-Thread-Communication-Patterns/README.md) |
 | 7.34 | Common Thread-Safety Strategies | ✅ Completed | [Open](07-Multithreading-Fundamentals/34-Common-Thread-Safety-Strategies/README.md) |
 | 7.35 | Multithreading Interview Scenarios | ✅ Completed | [Open](07-Multithreading-Fundamentals/35-Multithreading-Interview-Scenarios/README.md) |
-| 7.36 | Multithreading Quick Revision | ⏳ Pending | — |
+| 7.36 | Multithreading Quick Revision | ✅ Completed | [Open](07-Multithreading-Fundamentals/36-Multithreading-Quick-Revision/README.md) |
 | 7.37 | Multithreading Final Assessment | ⏳ Pending | — |
 
 ---
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.35 Multithreading Interview Scenarios → ✅ Completed**
+**Current Progress → Chapter 7 → 7.36 Multithreading Quick Revision → ✅ Completed**
 
-**Next → 7.36 — Multithreading Quick Revision**
+**Next → 7.37 — Multithreading Final Assessment**
