@@ -65,7 +65,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.22 | `volatile` vs `synchronized` | ✅ Completed | [Open](07-Multithreading-Fundamentals/22-Volatile-vs-Synchronized/README.md) |
 | 7.23 | `wait()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/23-wait/README.md) |
 | 7.24 | `notify()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/24-notify/README.md) |
-| 7.25 | `notifyAll()` | ⏳ Pending | — |
+| 7.25 | `notifyAll()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/25-notifyAll/README.md) |
 | 7.26 | Monitor Ownership with `wait/notify` | ⏳ Pending | — |
 | 7.27 | `wait()` vs `sleep()` | ⏳ Pending | — |
 | 7.28 | Thread Interruption | ⏳ Pending | — |
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.24 `notify()` → ✅ Completed**
+**Current Progress → Chapter 7 → 7.25 `notifyAll()` → ✅ Completed**
 
-**Next → 7.25 — `notifyAll()`**
+**Next → 7.26 — Monitor Ownership with `wait/notify`**
