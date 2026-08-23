@@ -19,7 +19,7 @@
 | 8.9 | Queueing, Rejection Policies & Backpressure | ✅ Completed | [Open](09-Queueing-Rejection-Policies-and-Backpressure/README.md) |
 | 8.10 | Custom `ThreadFactory` | ✅ Completed | [Open](10-Custom-ThreadFactory/README.md) |
 | 8.11 | `CountDownLatch` | ✅ Completed | [Open](11-CountDownLatch/README.md) |
-| 8.12 | `CyclicBarrier` | ⏳ Pending | — |
+| 8.12 | `CyclicBarrier` | ✅ Completed | [Open](12-CyclicBarrier/README.md) |
 | 8.13 | `Semaphore` | ⏳ Pending | — |
 | 8.14 | `Exchanger` | ⏳ Pending | — |
 | 8.15 | `Phaser` | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.11 — `CountDownLatch` → ✅ Completed**
+**Current → 8.12 — `CyclicBarrier` → ✅ Completed**
 
-**Next → 8.12 — `CyclicBarrier`**
+**Next → 8.13 — `Semaphore`**
