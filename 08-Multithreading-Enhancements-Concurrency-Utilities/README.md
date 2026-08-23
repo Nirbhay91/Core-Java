@@ -27,7 +27,7 @@
 | 8.17 | `tryLock()` and Timed Locking | ✅ Completed | [Open](17-tryLock-and-Timed-Locking/README.md) |
 | 8.18 | `ReentrantReadWriteLock` | ✅ Completed | [Open](18-ReentrantReadWriteLock/README.md) |
 | 8.19 | `StampedLock` | ✅ Completed | [Open](19-StampedLock/README.md) |
-| 8.20 | `Condition` | ⏳ Pending | — |
+| 8.20 | `Condition` | ✅ Completed | [Open](20-Condition/README.md) |
 | 8.21 | Atomic Variables & CAS | ⏳ Pending | — |
 | 8.22 | `LongAdder` / `LongAccumulator` | ⏳ Pending | — |
 | 8.23 | Concurrent Collections Overview | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.19 — `StampedLock` → ✅ Completed**
+**Current → 8.20 — `Condition` → ✅ Completed**
 
-**Next → 8.20 — `Condition`**
+**Next → 8.21 — Atomic Variables & CAS**
