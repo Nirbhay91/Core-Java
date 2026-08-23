@@ -4,32 +4,13 @@
 >
 > Focus: thread pools, executors, scheduling, futures, synchronization utilities, concurrent collections, locks, atomics, Fork/Join and `CompletableFuture`.
 
-## 🎯 Interview Goal
-
-By the end of this chapter, you should be able to answer:
-
-- Why should we prefer `ExecutorService` over manually creating threads?
-- How does a thread pool work?
-- `execute()` vs `submit()`?
-- `shutdown()` vs `shutdownNow()`?
-- What are `Future` limitations?
-- When should we use `CompletableFuture`?
-- How do `CountDownLatch`, `CyclicBarrier` and `Semaphore` differ?
-- `synchronized` vs `Lock` vs `ReadWriteLock` vs `StampedLock`?
-- How do concurrent collections work conceptually?
-- What are `Atomic*` classes and CAS?
-- What is Fork/Join and work stealing?
-- How do we design and shut down concurrent applications safely?
-
----
-
-# 📚 Chapter 8 Roadmap
+## 📚 Chapter 8 Roadmap
 
 | # | Topic | Status | Link |
 |---:|---|---|---|
 | 8.1 | `Executor` and `ExecutorService` Fundamentals | ✅ Completed | [Open](01-Executor-and-ExecutorService-Fundamentals/README.md) |
 | 8.2 | Thread Pool Fundamentals | ✅ Completed | [Open](02-Thread-Pool-Fundamentals/README.md) |
-| 8.3 | `execute()` vs `submit()` | ⏳ Pending | — |
+| 8.3 | `execute()` vs `submit()` | ✅ Completed | [Open](03-execute-vs-submit/README.md) |
 | 8.4 | `shutdown()` vs `shutdownNow()` | ⏳ Pending | — |
 | 8.5 | `Future` and `Callable` | ⏳ Pending | — |
 | 8.6 | `ScheduledExecutorService` | ⏳ Pending | — |
@@ -74,59 +55,12 @@ By the end of this chapter, you should be able to answer:
 
 # 🧠 Practice Code Strategy
 
-Every topic will include runnable Java practice wherever applicable.
-
-Practice will cover:
+Every topic will include runnable Java practice wherever applicable:
 
 ```text
-Concept
-  ↓
-Minimal Runnable Example
-  ↓
-Wrong / Unsafe Version
-  ↓
-Correct Version
-  ↓
-Production Scenario
-  ↓
-Interview Question
-  ↓
-Debugging Exercise
+Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
+       → Production Scenario → Interview Questions → Debugging → Revision
 ```
-
-## Important Practice Areas
-
-- Executor-based task execution
-- Fixed and cached thread pools
-- Scheduled jobs
-- `Callable` + `Future`
-- Graceful executor shutdown
-- Rejection handling
-- Latches and barriers
-- Semaphores for resource limits
-- Explicit locks and conditions
-- Atomic counters
-- Concurrent collections
-- Producer-consumer with `BlockingQueue`
-- `CompletableFuture` pipelines
-- Parallel async composition
-- Exception handling and timeouts
-- Fork/Join
-- Work stealing
-- Thread-pool sizing
-
----
-
-# 🎯 Chapter Completion Criteria
-
-Chapter 8 will be marked **✅ Completed** only after:
-
-1. All 8.1–8.42 topics are completed.
-2. Practice code has been added for each applicable topic.
-3. Real-world concurrency scenarios are covered.
-4. Quick revision is completed.
-5. Final assessment is passed with **80%+**.
-6. You can explain executor, lock, concurrent collection and `CompletableFuture` decisions in an interview.
 
 ---
 
@@ -134,6 +68,6 @@ Chapter 8 will be marked **✅ Completed** only after:
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.2 — Thread Pool Fundamentals → ✅ Completed**
+**Current → 8.3 — `execute()` vs `submit()` → ✅ Completed**
 
-**Next → 8.3 — `execute()` vs `submit()`**
+**Next → 8.4 — `shutdown()` vs `shutdownNow()`**
