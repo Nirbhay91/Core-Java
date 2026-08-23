@@ -49,7 +49,7 @@ A chapter-wise roadmap for **Core Java + Java Interview Preparation**. Each topi
 | 7.6 | Thread Naming & Basic Thread APIs | ✅ Completed | [Open](07-Multithreading-Fundamentals/06-Thread-Naming-and-Basic-Thread-APIs/README.md) |
 | 7.7 | `start()` vs `run()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/07-start-vs-run/README.md) |
 | 7.8 | `sleep()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/08-sleep/README.md) |
-| 7.9 | `join()` | ⏳ Pending | — |
+| 7.9 | `join()` | ✅ Completed | [Open](07-Multithreading-Fundamentals/09-join/README.md) |
 | 7.10 | `yield()` | ⏳ Pending | — |
 | 7.11 | Race Condition | ⏳ Pending | — |
 | 7.12 | Critical Section | ⏳ Pending | — |
@@ -100,6 +100,6 @@ Chapters 1–6 and 8–23 remain in the roadmap and will be completed sequential
 10. Final Assessment
 ```
 
-**Current Progress → Chapter 7 → 7.8 `sleep()` → ✅ Completed**
+**Current Progress → Chapter 7 → 7.9 `join()` → ✅ Completed**
 
-**Next → 7.9 — `join()`**
+**Next → 7.10 — `yield()`**
