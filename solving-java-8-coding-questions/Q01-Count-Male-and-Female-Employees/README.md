@@ -566,19 +566,385 @@ This version also handles a null/empty input contract explicitly.
 
 ---
 
-# 20. 2-Minute Interview Answer
+# 20. 🏆 COMPLETE INTERVIEW PRACTICE CODE — COPY & WRITE YOURSELF
 
-> **"For this problem, I need category-wise counting. So I would stream the employee list and use `Collectors.groupingBy()` with `Employee::getGender` as the classifier and `Collectors.counting()` as the downstream collector. The result is a `Map<String, Long>` where the key is the gender and the value is the number of employees in that group. This processes the employees in one stream pipeline and has O(N) expected time complexity, where N is the number of employees. The extra space is O(K), where K is the number of distinct gender values. I prefer this over running separate filters for male and female because the requirement is naturally a grouping-and-aggregation problem."**
+> **This is the one place to practice the complete answer from scratch.**
+>
+> First try writing it without looking at the solution. Then compare line-by-line.
+
+## Step 1 — Employee Model
+
+```java
+public class Employee {
+
+    private int id;
+    private String name;
+    private String gender;
+    private double salary;
+
+    public Employee(int id, String name, String gender, double salary) {
+        this.id = id;
+        this.name = name;
+        this.gender = gender;
+        this.salary = salary;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
+}
+```
+
+## Step 2 — Interview Solution Class
+
+```java
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class CountMaleFemaleEmployees {
+
+    public static Map<String, Long> countByGender(
+            List<Employee> employeeList) {
+
+        if (employeeList == null || employeeList.isEmpty()) {
+            return Collections.emptyMap();
+        }
+
+        return employeeList.stream()
+                .collect(Collectors.groupingBy(
+                        Employee::getGender,
+                        Collectors.counting()
+                ));
+    }
+
+    public static void main(String[] args) {
+
+        List<Employee> employees = Arrays.asList(
+                new Employee(1, "Amit", "Male", 70000),
+                new Employee(2, "Priya", "Female", 80000),
+                new Employee(3, "Rahul", "Male", 90000),
+                new Employee(4, "Neha", "Female", 75000),
+                new Employee(5, "Karan", "Male", 85000)
+        );
+
+        Map<String, Long> result = countByGender(employees);
+
+        System.out.println("Gender-wise Employee Count:");
+        result.forEach((gender, count) ->
+                System.out.println(gender + " -> " + count));
+    }
+}
+```
+
+Expected output conceptually:
+
+```text
+Gender-wise Employee Count:
+Male -> 3
+Female -> 2
+```
+
+> `HashMap`/`groupingBy()` does not guarantee a specific iteration order, so do not make your interview answer depend on whether `Male` or `Female` prints first.
 
 ---
 
-# 21. 30-Second Hinglish Answer
+## Step 3 — Null-Safe Interview Variant
+
+When the interviewer asks:
+
+> **"What if gender is null?"**
+
+Use an explicit normalization strategy:
+
+```java
+public static Map<String, Long> countByGender(
+        List<Employee> employeeList) {
+
+    if (employeeList == null || employeeList.isEmpty()) {
+        return Collections.emptyMap();
+    }
+
+    return employeeList.stream()
+            .collect(Collectors.groupingBy(
+                    employee -> employee.getGender() == null
+                            ? "UNKNOWN"
+                            : employee.getGender(),
+                    Collectors.counting()
+            ));
+}
+```
+
+This makes the business decision explicit instead of leaving null handling implicit.
+
+---
+
+## Step 4 — Manual Java 8 Alternative
+
+If interviewer says:
+
+> **"Don't use `groupingBy()`."**
+
+```java
+public static Map<String, Long> countByGender(
+        List<Employee> employeeList) {
+
+    Map<String, Long> result = new java.util.HashMap<>();
+
+    if (employeeList == null) {
+        return result;
+    }
+
+    for (Employee employee : employeeList) {
+        result.merge(
+                employee.getGender(),
+                1L,
+                Long::sum
+        );
+    }
+
+    return result;
+}
+```
+
+Interview point:
+
+```text
+groupingBy + counting
+→ declarative Stream solution
+
+merge
+→ imperative/manual solution
+```
+
+---
+
+## Step 5 — Traditional Loop Alternative
+
+If interviewer says:
+
+> **"Don't use Stream API at all."**
+
+```java
+public static Map<String, Long> countByGender(
+        List<Employee> employeeList) {
+
+    Map<String, Long> result = new java.util.HashMap<>();
+
+    if (employeeList == null) {
+        return result;
+    }
+
+    for (Employee employee : employeeList) {
+        String gender = employee.getGender();
+
+        if (gender == null) {
+            gender = "UNKNOWN";
+        }
+
+        Long currentCount = result.get(gender);
+
+        if (currentCount == null) {
+            result.put(gender, 1L);
+        } else {
+            result.put(gender, currentCount + 1);
+        }
+    }
+
+    return result;
+}
+```
+
+---
+
+## Step 6 — Interview Variations to Practice
+
+### Variation A — Count only Male
+
+```java
+long maleCount = employeeList.stream()
+        .filter(employee ->
+                "Male".equals(employee.getGender()))
+        .count();
+```
+
+### Variation B — Count only Female
+
+```java
+long femaleCount = employeeList.stream()
+        .filter(employee ->
+                "Female".equals(employee.getGender()))
+        .count();
+```
+
+### Variation C — Group by Department
+
+```java
+Map<String, Long> result = employeeList.stream()
+        .collect(Collectors.groupingBy(
+                Employee::getDepartment,
+                Collectors.counting()
+        ));
+```
+
+### Variation D — Gender + Average Salary
+
+```java
+Map<String, Double> averageSalaryByGender =
+        employeeList.stream()
+                .collect(Collectors.groupingBy(
+                        Employee::getGender,
+                        Collectors.averagingDouble(
+                                Employee::getSalary)
+                ));
+```
+
+### Variation E — Gender + Maximum Salary
+
+```java
+Map<String, Optional<Employee>> highestPaidByGender =
+        employeeList.stream()
+                .collect(Collectors.groupingBy(
+                        Employee::getGender,
+                        Collectors.maxBy(
+                                Comparator.comparingDouble(
+                                        Employee::getSalary)
+                        )
+                ));
+```
+
+### Variation F — Count by Gender and Department
+
+```java
+Map<String, Map<String, Long>> result =
+        employeeList.stream()
+                .collect(Collectors.groupingBy(
+                        Employee::getGender,
+                        Collectors.groupingBy(
+                                Employee::getDepartment,
+                                Collectors.counting()
+                        )
+                ));
+```
+
+---
+
+# 21. Full Interview Script 🎤
+
+### Interviewer:
+> Count male and female employees using Java 8.
+
+### You:
+
+> **"Sure. Since the requirement is category-wise counting, I'll use a Stream with `Collectors.groupingBy()` and `Collectors.counting()`. The key will be `Employee::getGender`, and the downstream collector will count the employees in each group."**
+
+Then write:
+
+```java
+Map<String, Long> result = employeeList.stream()
+        .collect(Collectors.groupingBy(
+                Employee::getGender,
+                Collectors.counting()
+        ));
+```
+
+Then explain:
+
+> **"`stream()` converts the list to a stream. `groupingBy()` creates groups by gender. `counting()` counts each group. Because `counting()` returns `Long`, the result type is `Map<String, Long>`. The expected time complexity is O(N)."**
+
+Then proactively mention:
+
+> **"If null or unknown gender is possible, I would normalize it to `UNKNOWN` based on the domain requirement."**
+
+---
+
+# 22. Rapid-Fire Follow-Up Practice
+
+Try answering these without looking above:
+
+```text
+1. Why groupingBy()?
+2. Why counting()?
+3. Why Long?
+4. Time complexity?
+5. Space complexity?
+6. What if gender is null?
+7. What if Stream API is not allowed?
+8. What if groupingBy() is not allowed?
+9. What if I need average salary per gender?
+10. What if I need highest-paid employee per gender?
+11. groupingBy() vs partitioningBy()?
+12. How does merge() work?
+13. Why not filter twice?
+14. Why not groupingBy() alone?
+15. What is a downstream collector?
+```
+
+---
+
+# 23. Final Interview Cheat Sheet 🧠
+
+```text
+Category-wise count
+        ↓
+groupingBy()
+        ↓
+counting()
+        ↓
+Map<String, Long>
+```
+
+```java
+employeeList.stream()
+        .collect(Collectors.groupingBy(
+                Employee::getGender,
+                Collectors.counting()
+        ));
+```
+
+### One-line memory formula
+
+> **GROUP → `groupingBy()` | COUNT → `counting()` | RESULT → `Map<K, Long>`**
+
+---
+
+# 24. 2-Minute Interview Answer
+
+> **"For this problem, I need category-wise counting. So I would stream the employee list and use `Collectors.groupingBy()` with `Employee::getGender` as the classifier and `Collectors.counting()` as the downstream collector. The result is a `Map<String, Long>` where the key is the gender and the value is the number of employees in that group. This processes the employees in one stream pipeline and has O(N) expected time complexity, where N is the number of employees. The extra space is O(K), where K is the number of distinct gender values. I prefer this over running separate filters for male and female because the requirement is naturally a grouping-and-aggregation problem. If the domain allows null gender values, I would explicitly normalize them to `UNKNOWN` or handle them according to the business contract."**
+
+---
+
+# 25. 30-Second Hinglish Answer
 
 > **"Is problem mein mujhe gender-wise employee count chahiye, so main `groupingBy()` ke saath `counting()` use karunga. `Employee::getGender` group key hoga aur `counting()` har group ke employees count karega. Result `Map<String, Long>` milega, jaise `Male=5, Female=3`. Time complexity O(N) hai aur extra space O(K), jahan K distinct genders hain. Simple memory trick: `groupingBy = group banana`, `counting = count karna`."**
 
 ---
 
-# 22. 🧠 Memory Trick
+# 26. 🧠 Memory Trick
 
 ```text
 Requirement:
@@ -601,7 +967,7 @@ groupingBy() + counting()
 
 ---
 
-# 23. Common Interview Mistakes
+# 27. Common Interview Mistakes
 
 ### ❌ Mistake 1
 
@@ -625,7 +991,7 @@ Not explaining what `groupingBy()` and `counting()` individually do.
 
 ---
 
-# 24. Follow-Up Questions
+# 28. Follow-Up Questions
 
 1. What does `Collectors.groupingBy()` return?
 2. Why does `counting()` return `Long`?
