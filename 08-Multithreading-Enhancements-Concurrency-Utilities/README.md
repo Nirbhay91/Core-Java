@@ -43,7 +43,7 @@
 | 8.33 | Async Execution & Custom Executors | ✅ Completed | [Open](33-Async-Execution-and-Custom-Executors/README.md) |
 | 8.34 | `allOf()` / `anyOf()` | ✅ Completed | [Open](34-allOf-and-anyOf/README.md) |
 | 8.35 | Fork/Join Framework | ✅ Completed | [Open](35-Fork-Join-Framework/README.md) |
-| 8.36 | Recursive Tasks & Work Stealing | ⏳ Pending | — |
+| 8.36 | Recursive Tasks & Work Stealing | ✅ Completed | [Open](36-Recursive-Tasks-and-Work-Stealing/README.md) |
 | 8.37 | Parallel Streams & Concurrency Risks | ⏳ Pending | — |
 | 8.38 | Thread Pool Sizing & Performance | ⏳ Pending | — |
 | 8.39 | Graceful Shutdown & Production Patterns | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.35 — Fork/Join Framework → ✅ Completed**
+**Current → 8.36 — Recursive Tasks & Work Stealing → ✅ Completed**
 
-**Next → 8.36 — Recursive Tasks & Work Stealing**
+**Next → 8.37 — Parallel Streams & Concurrency Risks**
