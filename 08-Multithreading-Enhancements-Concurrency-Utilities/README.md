@@ -34,7 +34,7 @@
 | 8.24 | `ConcurrentHashMap` Deep Dive | ✅ Completed | [Open](24-ConcurrentHashMap-Deep-Dive/README.md) |
 | 8.25 | `CopyOnWriteArrayList` | ✅ Completed | [Open](25-CopyOnWriteArrayList/README.md) |
 | 8.26 | `BlockingQueue` Implementations | ✅ Completed | [Open](26-BlockingQueue-Implementations/README.md) |
-| 8.27 | `ArrayBlockingQueue` vs `LinkedBlockingQueue` | ⏳ Pending | — |
+| 8.27 | `ArrayBlockingQueue` vs `LinkedBlockingQueue` | ✅ Completed | [Open](27-ArrayBlockingQueue-vs-LinkedBlockingQueue/README.md) |
 | 8.28 | `PriorityBlockingQueue` / `DelayQueue` | ⏳ Pending | — |
 | 8.29 | `ConcurrentLinkedQueue` | ⏳ Pending | — |
 | 8.30 | `CompletableFuture` Fundamentals | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.26 — `BlockingQueue` Implementations → ✅ Completed**
+**Current → 8.27 — `ArrayBlockingQueue` vs `LinkedBlockingQueue` → ✅ Completed**
 
-**Next → 8.27 — `ArrayBlockingQueue` vs `LinkedBlockingQueue`**
+**Next → 8.28 — `PriorityBlockingQueue` / `DelayQueue`**
