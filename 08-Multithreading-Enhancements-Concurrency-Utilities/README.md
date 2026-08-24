@@ -38,7 +38,7 @@
 | 8.28 | `PriorityBlockingQueue` / `DelayQueue` | ✅ Completed | [Open](28-PriorityBlockingQueue-and-DelayQueue/README.md) |
 | 8.29 | `ConcurrentLinkedQueue` | ✅ Completed | [Open](29-ConcurrentLinkedQueue/README.md) |
 | 8.30 | `CompletableFuture` Fundamentals | ✅ Completed | [Open](30-CompletableFuture-Fundamentals/README.md) |
-| 8.31 | `thenApply` / `thenCompose` / `thenCombine` | ⏳ Pending | — |
+| 8.31 | `thenApply` / `thenCompose` / `thenCombine` | ✅ Completed | [Open](31-thenApply-thenCompose-thenCombine/README.md) |
 | 8.32 | Exception Handling in `CompletableFuture` | ⏳ Pending | — |
 | 8.33 | Async Execution & Custom Executors | ⏳ Pending | — |
 | 8.34 | `allOf()` / `anyOf()` | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.30 — `CompletableFuture` Fundamentals → ✅ Completed**
+**Current → 8.31 — `thenApply` / `thenCompose` / `thenCombine` → ✅ Completed**
 
-**Next → 8.31 — `thenApply` / `thenCompose` / `thenCombine`**
+**Next → 8.32 — Exception Handling in `CompletableFuture`**
