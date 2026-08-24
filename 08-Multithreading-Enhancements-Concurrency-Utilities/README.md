@@ -41,7 +41,7 @@
 | 8.31 | `thenApply` / `thenCompose` / `thenCombine` | ✅ Completed | [Open](31-thenApply-thenCompose-thenCombine/README.md) |
 | 8.32 | Exception Handling in `CompletableFuture` | ✅ Completed | [Open](32-Exception-Handling-in-CompletableFuture/README.md) |
 | 8.33 | Async Execution & Custom Executors | ✅ Completed | [Open](33-Async-Execution-and-Custom-Executors/README.md) |
-| 8.34 | `allOf()` / `anyOf()` | ⏳ Pending | — |
+| 8.34 | `allOf()` / `anyOf()` | ✅ Completed | [Open](34-allOf-and-anyOf/README.md) |
 | 8.35 | Fork/Join Framework | ⏳ Pending | — |
 | 8.36 | Recursive Tasks & Work Stealing | ⏳ Pending | — |
 | 8.37 | Parallel Streams & Concurrency Risks | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.33 — Async Execution & Custom Executors → ✅ Completed**
+**Current → 8.34 — `allOf()` / `anyOf()` → ✅ Completed**
 
-**Next → 8.34 — `allOf()` / `anyOf()`**
+**Next → 8.35 — Fork/Join Framework**
