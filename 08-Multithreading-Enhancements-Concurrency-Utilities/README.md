@@ -42,7 +42,7 @@
 | 8.32 | Exception Handling in `CompletableFuture` | ✅ Completed | [Open](32-Exception-Handling-in-CompletableFuture/README.md) |
 | 8.33 | Async Execution & Custom Executors | ✅ Completed | [Open](33-Async-Execution-and-Custom-Executors/README.md) |
 | 8.34 | `allOf()` / `anyOf()` | ✅ Completed | [Open](34-allOf-and-anyOf/README.md) |
-| 8.35 | Fork/Join Framework | ⏳ Pending | — |
+| 8.35 | Fork/Join Framework | ✅ Completed | [Open](35-Fork-Join-Framework/README.md) |
 | 8.36 | Recursive Tasks & Work Stealing | ⏳ Pending | — |
 | 8.37 | Parallel Streams & Concurrency Risks | ⏳ Pending | — |
 | 8.38 | Thread Pool Sizing & Performance | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.34 — `allOf()` / `anyOf()` → ✅ Completed**
+**Current → 8.35 — Fork/Join Framework → ✅ Completed**
 
-**Next → 8.35 — Fork/Join Framework**
+**Next → 8.36 — Recursive Tasks & Work Stealing**
