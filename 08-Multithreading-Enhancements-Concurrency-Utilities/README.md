@@ -46,7 +46,7 @@
 | 8.36 | Recursive Tasks & Work Stealing | ✅ Completed | [Open](36-Recursive-Tasks-and-Work-Stealing/README.md) |
 | 8.37 | Parallel Streams & Concurrency Risks | ✅ Completed | [Open](37-Parallel-Streams-and-Concurrency-Risks/README.md) |
 | 8.38 | Thread Pool Sizing & Performance | ✅ Completed | [Open](38-Thread-Pool-Sizing-and-Performance/README.md) |
-| 8.39 | Graceful Shutdown & Production Patterns | ⏳ Pending | — |
+| 8.39 | Graceful Shutdown & Production Patterns | ✅ Completed | [Open](39-Graceful-Shutdown-and-Production-Patterns/README.md) |
 | 8.40 | Concurrency Utilities Interview Scenarios | ⏳ Pending | — |
 | 8.41 | Concurrency Utilities Quick Revision | ⏳ Pending | — |
 | 8.42 | Concurrency Utilities Final Assessment | ⏳ Pending | — |
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.38 — Thread Pool Sizing & Performance → ✅ Completed**
+**Current → 8.39 — Graceful Shutdown & Production Patterns → ✅ Completed**
 
-**Next → 8.39 — Graceful Shutdown & Production Patterns**
+**Next → 8.40 — Concurrency Utilities Interview Scenarios**
