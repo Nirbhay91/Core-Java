@@ -49,7 +49,7 @@
 | 8.39 | Graceful Shutdown & Production Patterns | ✅ Completed | [Open](39-Graceful-Shutdown-and-Production-Patterns/README.md) |
 | 8.40 | Concurrency Utilities Interview Scenarios | ✅ Completed | [Open](40-Concurrency-Utilities-Interview-Scenarios/README.md) |
 | 8.41 | Concurrency Utilities Quick Revision | ✅ Completed | [Open](41-Concurrency-Utilities-Quick-Revision/README.md) |
-| 8.42 | Concurrency Utilities Final Assessment | ⏳ Pending | — |
+| 8.42 | Concurrency Utilities Final Assessment | ✅ Completed | [Open](42-Concurrency-Utilities-Final-Assessment/README.md) |
 
 ---
 
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.41 — Concurrency Utilities Quick Revision → ✅ Completed**
+**Current → 8.42 — Concurrency Utilities Final Assessment → ✅ Completed**
 
-**Next → 8.42 — Concurrency Utilities Final Assessment**
+**Chapter 8 → ✅ COMPLETE**
