@@ -47,7 +47,7 @@
 | 8.37 | Parallel Streams & Concurrency Risks | ✅ Completed | [Open](37-Parallel-Streams-and-Concurrency-Risks/README.md) |
 | 8.38 | Thread Pool Sizing & Performance | ✅ Completed | [Open](38-Thread-Pool-Sizing-and-Performance/README.md) |
 | 8.39 | Graceful Shutdown & Production Patterns | ✅ Completed | [Open](39-Graceful-Shutdown-and-Production-Patterns/README.md) |
-| 8.40 | Concurrency Utilities Interview Scenarios | ⏳ Pending | — |
+| 8.40 | Concurrency Utilities Interview Scenarios | ✅ Completed | [Open](40-Concurrency-Utilities-Interview-Scenarios/README.md) |
 | 8.41 | Concurrency Utilities Quick Revision | ⏳ Pending | — |
 | 8.42 | Concurrency Utilities Final Assessment | ⏳ Pending | — |
 
@@ -68,6 +68,6 @@ Concept → Runnable Example → Wrong/Unsafe Version → Correct Version
 
 [🏠 Core Java Master README](../README.md)
 
-**Current → 8.39 — Graceful Shutdown & Production Patterns → ✅ Completed**
+**Current → 8.40 — Concurrency Utilities Interview Scenarios → ✅ Completed**
 
-**Next → 8.40 — Concurrency Utilities Interview Scenarios**
+**Next → 8.41 — Concurrency Utilities Quick Revision**
