@@ -285,8 +285,8 @@ Runnable task = () -> {
 Thread t1 = new Thread(task, "worker-1");
 Thread t2 = new Thread(task, "worker-2");
 
- t1.start();
- t2.start();
+t1.start();
+t2.start();
 ```
 
 The task object can therefore be separated from the thread instances.
@@ -474,7 +474,483 @@ This avoids manually creating a new thread for every task and is generally more 
 
 ---
 
-## 17. Common Mistakes ⭐⭐⭐⭐⭐
+# 17. Complete End-to-End Real-World Example — Order Processing System ⭐⭐⭐⭐⭐
+
+### 🎯 Scenario
+
+Imagine an e-commerce application receives orders. After an order is created, a background task needs to perform a sequence of independent operations:
+
+```text
+Customer places order
+        ↓
+Order created
+        ↓
+Runnable task submitted to a Thread
+        ↓
+Validate order
+        ↓
+Reserve inventory
+        ↓
+Generate invoice
+        ↓
+Send confirmation
+        ↓
+Task completed
+```
+
+For this chapter we intentionally use **`Thread + Runnable` directly** so that you can clearly see how `Runnable` represents the work. In production, the same task would normally move to an `ExecutorService`/thread pool rather than creating a new raw thread per order.
+
+### Complete code — every important line commented
+
+```java
+// Main class containing the complete runnable example.
+public class OrderProcessingRunnableExample {
+
+    // Simple domain object representing an order.
+    static class Order {
+
+        // Unique identifier of the order.
+        private final String orderId;
+
+        // Customer name associated with the order.
+        private final String customerName;
+
+        // Total amount of the order.
+        private final double amount;
+
+        // Constructor used to create an Order object.
+        Order(String orderId, String customerName, double amount) {
+            // Store the supplied order id in the instance field.
+            this.orderId = orderId;
+
+            // Store the supplied customer name in the instance field.
+            this.customerName = customerName;
+
+            // Store the supplied amount in the instance field.
+            this.amount = amount;
+        }
+
+        // Getter used to read the order id.
+        public String getOrderId() {
+            // Return the order id.
+            return orderId;
+        }
+
+        // Getter used to read the customer name.
+        public String getCustomerName() {
+            // Return the customer name.
+            return customerName;
+        }
+
+        // Getter used to read the order amount.
+        public double getAmount() {
+            // Return the order amount.
+            return amount;
+        }
+    }
+
+    // Runnable represents the background business task.
+    static class OrderProcessingTask implements Runnable {
+
+        // Store the order that this task needs to process.
+        private final Order order;
+
+        // Constructor receives the order to process.
+        OrderProcessingTask(Order order) {
+            // Save the order reference in the task object.
+            this.order = order;
+        }
+
+        // Thread executes this method when start() is called.
+        @Override
+        public void run() {
+
+            // Read the name of the thread currently executing this task.
+            String threadName = Thread.currentThread().getName();
+
+            // Print a message showing that processing has started.
+            System.out.println(
+                    "[" + threadName + "] Started order processing: "
+                            + order.getOrderId()
+            );
+
+            // Validate the incoming order before processing it further.
+            if (!validateOrder()) {
+                // Print an error message when validation fails.
+                System.out.println(
+                        "[" + threadName + "] Order validation failed: "
+                                + order.getOrderId()
+                );
+
+                // Stop the task because the order is invalid.
+                return;
+            }
+
+            // Reserve the inventory required for this order.
+            reserveInventory();
+
+            // Generate an invoice for the customer.
+            generateInvoice();
+
+            // Send a confirmation message to the customer.
+            sendConfirmation();
+
+            // Print a success message after every step is completed.
+            System.out.println(
+                    "[" + threadName + "] Completed order processing: "
+                            + order.getOrderId()
+            );
+        }
+
+        // Method representing order validation business logic.
+        private boolean validateOrder() {
+
+            // Print which order is currently being validated.
+            System.out.println(
+                    "[" + Thread.currentThread().getName()
+                            + "] Validating order: " + order.getOrderId()
+            );
+
+            // Simulate a small amount of processing time.
+            sleep(500);
+
+            // Return true when the order has a positive amount.
+            return order.getAmount() > 0;
+        }
+
+        // Method representing inventory reservation logic.
+        private void reserveInventory() {
+
+            // Print an inventory reservation message.
+            System.out.println(
+                    "[" + Thread.currentThread().getName()
+                            + "] Reserving inventory for: " + order.getOrderId()
+            );
+
+            // Simulate inventory service processing time.
+            sleep(700);
+        }
+
+        // Method representing invoice-generation logic.
+        private void generateInvoice() {
+
+            // Print an invoice-generation message.
+            System.out.println(
+                    "[" + Thread.currentThread().getName()
+                            + "] Generating invoice for: " + order.getOrderId()
+            );
+
+            // Simulate invoice processing time.
+            sleep(400);
+
+            // Print the invoice amount.
+            System.out.println(
+                    "[" + Thread.currentThread().getName()
+                            + "] Invoice amount: " + order.getAmount()
+            );
+        }
+
+        // Method representing customer notification logic.
+        private void sendConfirmation() {
+
+            // Print a confirmation message.
+            System.out.println(
+                    "[" + Thread.currentThread().getName()
+                            + "] Sending confirmation to: "
+                            + order.getCustomerName()
+            );
+
+            // Simulate notification service processing time.
+            sleep(300);
+        }
+
+        // Utility method used to pause the current thread safely.
+        private void sleep(long milliseconds) {
+
+            // Start a try block because Thread.sleep() can throw InterruptedException.
+            try {
+
+                // Pause the currently executing thread for the requested duration.
+                Thread.sleep(milliseconds);
+
+            } catch (InterruptedException e) {
+
+                // Restore the interrupted status of the current thread.
+                Thread.currentThread().interrupt();
+
+                // Print a message explaining that processing was interrupted.
+                System.out.println(
+                        "[" + Thread.currentThread().getName()
+                                + "] Task interrupted for order: "
+                                + order.getOrderId()
+                );
+            }
+        }
+    }
+
+    // Main method is the application entry point.
+    public static void main(String[] args) throws InterruptedException {
+
+        // Create the first order.
+        Order order1 = new Order(
+                "ORD-1001",
+                "Nirbhay",
+                2499.00
+        );
+
+        // Create the second order.
+        Order order2 = new Order(
+                "ORD-1002",
+                "Rahul",
+                1599.00
+        );
+
+        // Create a Runnable task for the first order.
+        Runnable task1 = new OrderProcessingTask(order1);
+
+        // Create a Runnable task for the second order.
+        Runnable task2 = new OrderProcessingTask(order2);
+
+        // Create a thread and associate the first Runnable task with it.
+        Thread worker1 = new Thread(task1, "order-worker-1");
+
+        // Create another thread and associate the second Runnable task with it.
+        Thread worker2 = new Thread(task2, "order-worker-2");
+
+        // Print a message before starting background processing.
+        System.out.println("[main] Starting order processing...");
+
+        // Start the first worker thread.
+        worker1.start();
+
+        // Start the second worker thread.
+        worker2.start();
+
+        // Wait until the first worker thread finishes.
+        worker1.join();
+
+        // Wait until the second worker thread finishes.
+        worker2.join();
+
+        // Print a final message after both worker threads have completed.
+        System.out.println("[main] All orders processed successfully.");
+    }
+}
+```
+
+### 🔍 What this example teaches
+
+```text
+Order
+   ↓
+Domain data
+
+OrderProcessingTask implements Runnable
+   ↓
+Business task / work
+
+Thread
+   ↓
+Execution mechanism
+
+worker1.start()
+worker2.start()
+   ↓
+run() executes concurrently
+```
+
+The most important design separation is:
+
+```text
+OrderProcessingTask
+        ↓
+WHAT work should happen?
+
+Thread
+        ↓
+HOW/WHERE that work executes?
+```
+
+This directly demonstrates why `Runnable` is a task abstraction. fileciteturn482file0
+
+---
+
+## 18. Why This Real-World Example Is Better Than a Simple Print Statement
+
+A simple example:
+
+```java
+new Thread(() -> System.out.println("Hello")).start();
+```
+
+shows syntax, but the order-processing example demonstrates the interview-level design:
+
+```text
+Domain object
+   ↓
+Task object
+   ↓
+Runnable
+   ↓
+Thread
+   ↓
+start()
+   ↓
+Concurrent execution
+```
+
+It also demonstrates:
+
+- thread naming
+- multiple tasks
+- `join()`
+- checked interruption handling
+- task/business separation
+- lifecycle ownership by `Thread`
+- why the task itself does not create the thread
+
+---
+
+## 19. Real-World Design Improvement — Move to ExecutorService ⭐⭐⭐⭐⭐
+
+The previous example intentionally creates raw threads because the purpose is to learn `Runnable`.
+
+For production systems, this:
+
+```java
+Thread worker = new Thread(task);
+worker.start();
+```
+
+would commonly become:
+
+```java
+ExecutorService executor = Executors.newFixedThreadPool(4);
+executor.submit(task);
+executor.shutdown();
+```
+
+The separation becomes:
+
+```text
+Runnable
+   ↓
+Business task
+   ↓
+ExecutorService
+   ↓
+Thread Pool
+   ↓
+Worker Thread
+```
+
+This is exactly why learning `Runnable` first is important before moving to `ExecutorService`.
+
+---
+
+## 20. Interview Scenario — Why Not Create One Thread Per Order?
+
+Suppose the system receives:
+
+```text
+10 orders
+100 orders
+10,000 orders
+100,000 orders
+```
+
+Creating one new `Thread` for every order does not scale well.
+
+The learning example is intentionally:
+
+```text
+Order → Runnable → Thread
+```
+
+The production pattern is usually:
+
+```text
+Order → Runnable → ExecutorService → Thread Pool
+```
+
+### 5-Year Interview Answer
+
+> **"I would use Runnable to model the order-processing task, but I would not create a raw Thread for every production order. For a real application I would submit these Runnable tasks to an ExecutorService with an appropriately sized thread pool. That gives me controlled concurrency, thread reuse, queueing and lifecycle management."**
+
+---
+
+## 21. Important `join()` Point
+
+In the example:
+
+```java
+worker1.join();
+worker2.join();
+```
+
+the `main` thread waits for both worker threads to finish.
+
+```text
+main
+ │
+ ├── worker1.start()
+ │
+ ├── worker2.start()
+ │
+ ├── worker1.join() ── wait
+ │
+ └── worker2.join() ── wait
+          ↓
+     workers finished
+          ↓
+      main continues
+```
+
+`join()` does not make `Runnable` asynchronous; it is a coordination mechanism for the `Thread` objects.
+
+---
+
+## 22. Runnable Thread-Safety Follow-up
+
+Our `OrderProcessingTask` contains:
+
+```java
+private final Order order;
+```
+
+The task does not mutate shared state between worker threads.
+
+That makes the example easier to reason about.
+
+But this would be dangerous:
+
+```java
+class OrderProcessingTask implements Runnable {
+    private int processedOrders;
+
+    @Override
+    public void run() {
+        processedOrders++;
+    }
+}
+```
+
+If the same task object is executed by multiple threads, `processedOrders++` is a read-modify-write operation and is not automatically atomic.
+
+Possible solutions depend on the design:
+
+```text
+AtomicInteger
+synchronized
+Lock
+thread confinement
+immutable state
+executor-level aggregation
+```
+
+---
+
+## 23. Common Mistakes ⭐⭐⭐⭐⭐
 
 ### Mistake 1 — Thinking Runnable creates a thread
 
@@ -520,9 +996,21 @@ t2.start();
 
 ❌ Does not guarantee that `t1` runs before `t2`.
 
+### Mistake 6 — Creating unlimited raw threads in production
+
+```java
+for (...) {
+    new Thread(task).start();
+}
+```
+
+❌ Thread creation has overhead and uncontrolled concurrency can exhaust resources.
+
+Prefer an executor/thread pool for production workloads.
+
 ---
 
-## 18. Interview Questions
+## 24. Interview Questions
 
 ### Q1. What is Runnable?
 
@@ -570,15 +1058,23 @@ The `run()` method does not declare checked exceptions, so a Runnable implementa
 
 The Runnable represents the task and the executor manages when and on which worker thread the task executes.
 
+### Q11. Why is `join()` used in a Runnable + Thread example?
+
+`join()` lets the calling thread wait for a worker thread to terminate before continuing.
+
+### Q12. Why is a thread pool better than creating one Thread per request?
+
+It reuses worker threads, limits concurrency, manages task queueing and gives better control over resources.
+
 ---
 
-## 19. 2-Minute Interview Answer ⭐⭐⭐⭐⭐
+## 25. 2-Minute Interview Answer ⭐⭐⭐⭐⭐
 
-> **"Runnable is a functional interface used to represent a task independently of the thread that executes it. We implement `run()` and pass the Runnable to a `Thread`, then call `start()`. Runnable itself does not create a thread. The major advantage over extending Thread is separation of concerns: Runnable represents the work, while Thread represents the execution mechanism. It also avoids Java's single-class-inheritance limitation and works naturally with lambdas and executor frameworks. However, Runnable does not make shared state thread-safe; synchronization is still required when multiple threads access mutable shared data. For tasks that need a return value, `Callable` is generally used instead." 
+> **"Runnable is a functional interface used to represent a task independently of the thread that executes it. We implement `run()` and pass the Runnable to a `Thread`, then call `start()`. Runnable itself does not create a thread. The major advantage over extending Thread is separation of concerns: Runnable represents the work, while Thread represents the execution mechanism. It also avoids Java's single-class-inheritance limitation and works naturally with lambdas and executor frameworks. However, Runnable does not make shared state thread-safe; synchronization is still required when multiple threads access mutable shared data. In a real application I would model work as Runnable but usually submit it to an ExecutorService/thread pool instead of creating a raw Thread for every request. For tasks that need a return value, Callable is generally used instead." 
 
 ---
 
-## 20. Quick Revision
+## 26. Quick Revision
 
 ```text
 Runnable
@@ -611,11 +1107,17 @@ start()        → new thread execution
 
 Runnable → no return value
 Callable → returns value
+
+Learning/demo:
+Runnable → Thread
+
+Production:
+Runnable → ExecutorService → Thread Pool
 ```
 
 ---
 
-## 21. Completion Checklist
+## 27. Completion Checklist
 
 - [x] `Runnable` definition
 - [x] Functional interface
@@ -631,6 +1133,10 @@ Callable → returns value
 - [x] Runnable vs Callable preview
 - [x] Thread lifecycle relationship
 - [x] Executor Framework connection
+- [x] **End-to-end real-world order processing example**
+- [x] **Every important line commented in real-world example**
+- [x] `join()` coordination
+- [x] Production design improvement
 - [x] Common mistakes
 - [x] Interview questions
 - [x] 2-minute interview answer
